@@ -1,5 +1,5 @@
 let heatmapPromises = [
-    d3.csv("/data/olist_orders_dataset.csv")
+    d3.csv("./data/olist_orders_dataset.csv")
 ]
 
 Promise.all(heatmapPromises).then(ready);

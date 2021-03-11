@@ -1,5 +1,5 @@
 let scatterPromises = [
-    d3.csv("https://raw.githubusercontent.com/fkeiler/ExploracaoECommerce/main/data/olist_orders_dataset.csv")
+    d3.csv("./data/olist_orders_dataset.csv")
 ]
 
 Promise.all(scatterPromises).then(ready);

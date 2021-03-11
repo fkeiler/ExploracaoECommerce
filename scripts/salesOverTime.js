@@ -1,4 +1,4 @@
-d3.csv("/data/olist_orders_dataset.csv").then(function(dataset_orders){
+d3.csv("./data/olist_orders_dataset.csv").then(function(dataset_orders){
     dataset_orders.forEach((d) => { 
         d.order_purchase_timestamp = new Date(d.order_purchase_timestamp)
         d.order_approved_at = new Date(d.order_approved_at)

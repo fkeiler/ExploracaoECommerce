@@ -3,7 +3,9 @@
     <title>Exploração de dados de marketplaces virtuais</title>
     <link rel="stylesheet" href="https://unpkg.com/dc@4/dist/style/dc.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style>
 
+    </style>
 </head>
 <body>
     
@@ -16,19 +18,35 @@
         <div id="sales-over-time" class="chart">
             <h1>Quantidade de pedidos por dia entre 2016 e 2018</h1>
         </div>
-        <div id="pie-delivery-status">
+        <div id="pie-delivery-status" class="chart">
             <h1>Status das Entregas</h1>
+        </div>
+        <div class="chart">
+            <div id="range">
+                <h1>Numero de pedidos por categoria do produto</h1>
+            </div>
+            <div id="focus"></div>
+        </div>
+        <div class="chart">
+            <h1>Número de Pedidos por Estado</h1>
+            <svg id="map"></svg>
+        </div>
+        <div id="days-heatmap" class="chart">
+            <h1>Num. Pedidos por dia do mes no ano de 2017</h1>
         </div>
     </div>
     
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/crossfilter2@1.5.4/crossfilter.min.js"></script>
     <script src="https://unpkg.com/dc@4/dist/dc.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
     <script src="scripts/barChart.js"></script>
     <script src="scripts/scatter.js"></script>
     <script src="scripts/heatmap.js"></script>
     <script src="scripts/salesOverTime.js"></script>
     <script src="scripts/pieChart.js"></script>
+    <script src="scripts/ordersMap.js"></script>
 
 </body>
 </html>

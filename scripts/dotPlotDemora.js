@@ -29,7 +29,7 @@ Promise.all([
   )
   return datasetReduzido
 }).then(function (datasetReduzido) {
-  const margin = { top: 10, bottom: 100, left: 100, right: 10 }
+  const margin = { top: 10, bottom: 30, left: 30, right: 10 }
   const width = 920
   const height = 780
 

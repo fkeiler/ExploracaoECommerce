@@ -31,9 +31,10 @@ function ready([ordersDataset]){
 
     let heatMap = dc.heatMap('#heatmap')
 
+    let minimalDimension = Math.min(window.innerHeight, window.innerWidth) * 0.8 // 80vmin
     heatMap
-        .width(960)
-        .height(960)
+        .width(minimalDimension)
+        .height(minimalDimension)
         .dimension(deliveryDim)
         .group(deliveryGroup)
         .keyAccessor(function(d) { return d.key[0] })

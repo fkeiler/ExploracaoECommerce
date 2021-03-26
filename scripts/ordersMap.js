@@ -3,24 +3,55 @@ const flowPromises = [
   d3.csv('./data/olist_customers_dataset.csv'),
   d3.csv('./data/olist_orders_dataset.csv', [['order_id', 'customer_id']])
 ]
+    
+function filterGroupCities(items, state){
+  return {
+    all: function () {
+      return items.filter(d => d.key[0] === state).slice(0, 5)
+    }
+  }
+}
 
 const mapObserver = new IntersectionObserver((entries, observer) => Promise.all(flowPromises).then(
   ([geoData, customersDataset, ordersDataset]) => {
-    const customersState = new Map(customersDataset.map(d => [d.customer_id, d.customer_state]))
+    const customersState = new Map(customersDataset.map(d => [d.customer_id, [d.customer_state, d.customer_city]]))
+
     ordersDataset.forEach(function (d) {
-      d.dest_state = customersState.get(d.customer_id)
+      let data = customersState.get(d.customer_id);
+      d["dest_state"] = data[0]
+      d["dest_city"] = data[1] 
     })
 
-    const facts = crossfilter(ordersDataset)
-    const statesDim = facts.dimension(d => d.dest_state)
-    const ordersGroup = statesDim.group().all()
 
-    const ordersPerStateMap = new Map(ordersGroup.map(d => [d.key, d.value]))
-
-    const colorScale = d3.scaleQuantile()
-      .domain(ordersGroup.flatMap(d => d.value))
+    const facts = crossfilter(ordersDataset);
+    
+    // Map Data
+    const statesDim = facts.dimension(d => d.dest_state);
+    const ordersGroup = statesDim.group();
+    const ordersGroupItems = ordersGroup.all();
+    
+    const ordersPerStateMap = new Map(ordersGroupItems.map(d => [d.key, d.value]))
+    
+    const mapColorScale = d3.scaleQuantile()
+      .domain(ordersGroupItems.flatMap(d => d.value))
       .range(d3.schemeBlues[6].slice(2))
+    
+      // Bars Data
+    const initialState = "SP";
+    const stateCityDim = facts.dimension(d => [d.dest_state, d.dest_city]);
+    const ordersCityGroup = stateCityDim.group();
+    
 
+    const cityStatesOrdersItems = ordersCityGroup.top(Infinity);
+    
+    const ordersPerCityGroup = filterGroupCities(cityStatesOrdersItems, initialState);
+    
+    const ordersCitiesScale = d3.scaleOrdinal()
+      .domain(cityStatesOrdersItems.flatMap(d => d.key[1]))
+    
+    const barChart = dc.barChart('#pedidos-cidades');
+    
+    //  ----     Map      -----
     const svg = d3.select('#map')
       .attr('width', 600)
       .attr('height', 480)
@@ -38,24 +69,46 @@ const mapObserver = new IntersectionObserver((entries, observer) => Promise.all(
       .data(geoData.features)
       .enter()
       .append('path')
-      .attr('fill', d => colorScale(ordersPerStateMap.get(d.properties.sigla)))
+      .attr('fill', d => mapColorScale(ordersPerStateMap.get(d.properties.sigla)))
       .attr('d', d3.geoPath()
         .projection(projection)
       )
       .style('stroke', '#fff')
-      .on('mouseover', function (d) {
+      .on('mouseover', function (d) { // show tooltip
         d3.select(this)
           .style('cursor', 'pointer')
           .attr('stroke-width', 2)
       })
-      .on('mouseout', function (d) {
+      .on('mouseout', function (d) { // hide tooltip
         d3.select(this)
           .style('cursor', 'default')
           .attr('stroke-width', 'none')
       })
+      .on("click", function(d, data){ // Filter Bars group and redraw graph
+        barChart.group(filterGroupCities(cityStatesOrdersItems, data.properties.sigla));
+        barChart.render();
+      })
       .append('title')
       .text(d => `Nome: ${d.properties.name}\nPedidos: ${ordersPerStateMap.get(d.properties.sigla)}`)
-
+    
+      barChart
+        .width(960)
+        .height(480)
+        .margins({ top: 50, right: 50, bottom: 50, left: 50 })
+        .dimension(stateCityDim)
+        .group(ordersPerCityGroup)
+        .keyAccessor(d => d.key[1])
+        .x(ordersCitiesScale)
+        .xUnits(dc.units.ordinal)
+        .elasticX(true)
+        .elasticY(true)
+        .ordering(d => -d.value)
+        .yAxisLabel('Quantidade de Pedidos')
+        .xAxisLabel('Cidades')
+      
+      barChart.render();
       entries.forEach(e => observer.unobserve(e.target))
   }), { threshold: 0.1 })
+
+
 mapObserver.observe(document.querySelector('#map'))

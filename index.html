@@ -2,6 +2,9 @@
 <head>
     <title>Exploração de dados de marketplaces virtuais</title>
     <link rel="stylesheet" href="https://unpkg.com/dc@4/dist/style/dc.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <style>
 
@@ -43,6 +46,12 @@
             <svg id="map"></svg>
             <a href="#days-heatmap">⬇️</a>
         </div>
+        
+        <div id="pedidos-cidades" class="chart">
+            <h1>Número de pedidos por cidade</h1>
+            <a href="#days-heatmap">⬇️</a>
+        </div>
+        
         <div id="days-heatmap" class="chart">
             <h1>Num. Pedidos por dia do mes no ano de 2017</h1>
         </div>
@@ -53,14 +62,17 @@
     <script src="https://unpkg.com/dc@4/dist/dc.js"></script>
     <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-    <script src="scripts/barChart.js"></script>
-    <script src="scripts/heatmap.js"></script>
-    <script src="scripts/salesOverTime.js"></script>
-    <script src="scripts/dotPlotDemora.js"></script>
-    <script src="scripts/pieChart.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <!-- <script src="scripts/barChart.js"></script> -->
+    <!-- <script src="scripts/heatmap.js"></script> -->
+    <!-- <script src="scripts/salesOverTime.js"></script> -->
+    <!-- <script src="scripts/dotPlotDemora.js"></script> -->
+    <!-- <script src="scripts/pieChart.js"></script> -->
     <script src="scripts/ordersMap.js"></script>
-    <script src="scripts/focusBar.js"></script>
-    <script src="scripts/daysHeatmap.js"></script>
+    <!-- <script src="scripts/focusBar.js"></script> -->
+    <!-- <script src="scripts/daysHeatmap.js"></script> -->
 
 </body>
 </html>

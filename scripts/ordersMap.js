@@ -36,7 +36,7 @@ const mapObserver = new IntersectionObserver((entries, observer) => Promise.all(
       .domain(ordersGroupItems.flatMap(d => d.value))
       .range(d3.schemeBlues[6].slice(2))
     
-      // Bars Data
+    // Bars Data
     const initialState = "SP";
     const stateCityDim = facts.dimension(d => [d.dest_state, d.dest_city]);
     const ordersCityGroup = stateCityDim.group();
@@ -63,6 +63,17 @@ const mapObserver = new IntersectionObserver((entries, observer) => Promise.all(
       .scale(4 * width / 1.3 / Math.PI)
       .translate([3 * width / 2, height / 8])
 
+    let tooltip = d3.select("#pedidos-estado")
+      .append("div")
+      .style("opacity", 0)
+      .style("position", "absolute")
+      .attr("class", "tooltip")
+      .style("background-color", "white")
+      .style("border", "solid")
+      .style("border-width", "2px")
+      .style("border-radius", "5px")
+      .style("padding", "5px")
+
     // Draw the map
     svg.append('g')
       .selectAll('path')
@@ -74,15 +85,25 @@ const mapObserver = new IntersectionObserver((entries, observer) => Promise.all(
         .projection(projection)
       )
       .style('stroke', '#fff')
-      .on('mouseover', function (d) { // show tooltip
+      .on('mouseover', function (d, data) { // show tooltip
         d3.select(this)
           .style('cursor', 'pointer')
           .attr('stroke-width', 2)
+        tooltip
+          .style("opacity", 1)
       })
       .on('mouseout', function (d) { // hide tooltip
+        tooltip
+          .style("opacity", 0)
         d3.select(this)
           .style('cursor', 'default')
           .attr('stroke-width', 'none')
+      })
+      .on("mousemove", function(d, data){
+        tooltip
+        .html(`Estado:${data.properties.sigla}<br>Quantidade de Pedidos: ${ordersPerStateMap.get(data.properties.sigla)}`)
+        .style("left", (d.layerX + 20) + "px")
+        .style("top", (d.layerY) + "px")
       })
       .on("click", function(d, data){ // Filter Bars group and redraw graph
         barChart.group(filterGroupCities(cityStatesOrdersItems, data.properties.sigla));
@@ -90,7 +111,7 @@ const mapObserver = new IntersectionObserver((entries, observer) => Promise.all(
       })
       .append('title')
       .text(d => `Nome: ${d.properties.name}\nPedidos: ${ordersPerStateMap.get(d.properties.sigla)}`)
-    
+      
       barChart
         .width(960)
         .height(480)

@@ -55,6 +55,7 @@ const mapObserver = new IntersectionObserver((entries, observer) => Promise.all(
     const svg = d3.select('#map')
       .attr('width', 600)
       .attr('height', 480)
+      .attr('viewbox', '0 0 100 100')
     const width = +svg.attr('width')
     const height = +svg.attr('height')
 
@@ -63,7 +64,45 @@ const mapObserver = new IntersectionObserver((entries, observer) => Promise.all(
       .scale(4 * width / 1.3 / Math.PI)
       .translate([3 * width / 2, height / 8])
 
-    let tooltip = d3.select("#pedidos-estado")
+    // Legend
+    const legend = d3.select("#map").append("g")
+    const legendKeys = mapColorScale.range();
+    const boxSize = 20;
+    const legendLabels = mapColorScale.range().map((d) => mapColorScale.invertExtent(d).join(' - '));
+    const offsetX = 10;
+    const offsetY = 300;
+
+    legend
+      .append("text")
+        .text("Legenda")
+        .style("font-family", "Roboto")
+        .style("font-size", 16)
+        .attr("x", offsetX)
+        .attr("y", offsetY - 10)    
+    
+    legend.selectAll("box-colors")
+      .data(legendKeys)
+      .enter()
+      .append("rect")
+        .attr("x", offsetX)
+        .attr("y", (d, i) => (offsetY + i*(boxSize + 5)) + "px")
+        .attr("width", boxSize)
+        .attr("height", boxSize)
+        .style("fill", d => d)
+    
+    legend.selectAll("box-labels")
+      .data(legendLabels)
+      .enter()
+      .append("text")
+        .attr("x", offsetX + boxSize + 5)
+        .attr("y", (d, i) => (offsetY + i*(boxSize + 5) + boxSize/2 + 5) + "px")
+        .text(d => d)
+        .style("alignment-baseline", "middle")
+        .style("font-family", "Roboto")
+        .style("font-size", 12)
+    
+    // Tooltip
+    const tooltip = d3.select("#pedidos-estado")
       .append("div")
       .style("opacity", 0)
       .style("position", "absolute")
@@ -99,19 +138,17 @@ const mapObserver = new IntersectionObserver((entries, observer) => Promise.all(
           .style('cursor', 'default')
           .attr('stroke-width', 'none')
       })
-      .on("mousemove", function(d, data){
+      .on("mousemove", function(d, data){ // Bind tooltip to data
         tooltip
         .html(`Estado:${data.properties.sigla}<br>Quantidade de Pedidos: ${ordersPerStateMap.get(data.properties.sigla)}`)
         .style("left", (d.layerX + 20) + "px")
         .style("top", (d.layerY) + "px")
       })
-      .on("click", function(d, data){ // Filter Bars group and redraw graph
+      .on("click", function(d, data){ // Filter Bars group and redraw
         barChart.group(filterGroupCities(cityStatesOrdersItems, data.properties.sigla));
         barChart.render();
       })
-      .append('title')
-      .text(d => `Nome: ${d.properties.name}\nPedidos: ${ordersPerStateMap.get(d.properties.sigla)}`)
-      
+
       barChart
         .width(960)
         .height(480)

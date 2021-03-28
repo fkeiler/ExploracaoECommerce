@@ -1,56 +1,96 @@
-const heatmapObserver = new IntersectionObserver((entries, observer) => d3.csv('./data/olist_orders_dataset.csv').then(
-  (ordersDataset) => {
-    function getDiferenceInDays (initialDate, finalDate) {
-      if (!initialDate || !finalDate) { return null }
-      const DifferenceInTime = finalDate.getTime() - initialDate.getTime()
-      return DifferenceInTime / (1000 * 3600 * 24)
-    }
+const heatmapObserver = new IntersectionObserver(
+  (entries, observer) => {
+    d3.csv('./data/olist_orders_dataset.csv').then(
+      (ordersDataset) => {
+        function getDiferenceInDays (initialDate, finalDate) {
+          if (!initialDate || !finalDate) { return null }
+          const DifferenceInTime = finalDate.getTime() - initialDate.getTime()
+          return Math.floor(DifferenceInTime / (1000 * 3600 * 24))
+        }
 
-    ordersDataset = ordersDataset.filter(
-      (d) => (d.order_purchase_timestamp !== '' &&
-        d.order_delivered_customer_date !== '' &&
-        d.order_estimated_delivery_date !== '')
-    )
-    const datasetReduzido =
-    ordersDataset.map(function (d) {
-      const dateParser = d3.timeParse('%Y-%m-%d %H:%M:%S')
+        ordersDataset = ordersDataset.filter(d => d.order_status === 'delivered')
+        const heatmapData = new Map()
+        for (let i = 0; i <= 31; i++) {
+          for (let j = 0; j <= 31; j++) {
+            heatmapData.set(`${i}, ${j}`, 0) // Tem que usar o stringify porque [0, 1] != [0, 1]
+          }
+        }
+        ordersDataset.forEach((d) => {
+          const dateParser = d3.timeParse('%Y-%m-%d %H:%M:%S')
 
-      const n = {}
-      d.order_purchase_timestamp = dateParser(d.order_purchase_timestamp)
-      d.order_delivered_customer_date = dateParser(d.order_delivered_customer_date)
-      d.order_estimated_delivery_date = dateParser(d.order_estimated_delivery_date)
+          d.order_purchase_timestamp = dateParser(d.order_purchase_timestamp)
+          d.order_delivered_customer_date = dateParser(d.order_delivered_customer_date)
+          d.order_estimated_delivery_date = dateParser(d.order_estimated_delivery_date)
 
-      // Calculate Delivery Time and Estimated Time
-      n.wait = Math.floor(getDiferenceInDays(d.order_purchase_timestamp, d.order_delivered_customer_date))
-      n.expected_wait = Math.floor(getDiferenceInDays(d.order_purchase_timestamp, d.order_estimated_delivery_date))
+          // Calculate Delivery Time and Estimated Time
+          const wait = getDiferenceInDays(d.order_purchase_timestamp, d.order_delivered_customer_date)
+          const expectedWait = getDiferenceInDays(d.order_purchase_timestamp, d.order_estimated_delivery_date)
 
-      return n
-    })
+          if (wait != null && expectedWait != null && wait <= 31 && expectedWait <= 31) { heatmapData.set(`${wait}, ${expectedWait}`, heatmapData.get(`${wait}, ${expectedWait}`) + 1) }
+        })
+        return heatmapData
+      }).then(
+      (heatmapData) => {
+        const margin = {
+          top: 10,
+          left: 50,
+          right: 10,
+          bottom: 50
+        }
+        const dimMin = Math.min(window.innerWidth, window.innerHeight) * 0.8 // 80vmin
+        const width = dimMin - margin.left - margin.right
+        const height = dimMin - margin.top - margin.bottom
+        const svg = d3.select('#heatmap')
+          .append('svg')
+          .attr('width', width + margin.left + margin.right)
+          .attr('height', height + margin.top + margin.bottom)
+          .append('g')
+          .attr('transform', `translate(${margin.left}, ${margin.top})`)
 
-    const facts = crossfilter(datasetReduzido.filter((d) => d.wait <= 31 && d.expected_wait <= 31))
-    const deliveryDim = facts.dimension(d => [d.wait, d.expected_wait])
-    const deliveryGroup = deliveryDim.group()
+        const x = d3.scaleBand()
+          .range([0, width])
+          .domain([...Array(32).keys()])
+          .padding(0.05)
+        svg.append('g')
+          .attr('transform', `translate(0, ${height})`)
+          .call(d3.axisBottom(x).tickSize(0))
+        svg.append('text')
+          .attr('transform',
+          `translate(${width / 2} , ${height + margin.top + 20} )`)
+          .style('text-anchor', 'middle')
+          .text('Date')
 
-    const heatMap = dc.heatMap('#heatmap')
+        const y = d3.scaleBand() // Escala y: demora esperada em dias
+          .range([height, 0])
+          .domain([...Array(32).keys()])
+          .padding(0.05)
+        svg.append('g')
+          .call(d3.axisLeft(y).tickSize(0))
+        svg.append('text')
+          .attr('transform', 'rotate(-90)')
+          .attr('y', 0 - margin.left)
+          .attr('x', 0 - (height / 2))
+          .attr('dy', '1em')
+          .attr('text-anchor', 'middle')
+          .text('Demora esperada (em dias)')
 
-    const minimalDimension = Math.min(window.innerHeight, window.innerWidth) * 0.8 // 80vmin
-    heatMap
-      .width(minimalDimension)
-      .height(minimalDimension)
-      .dimension(deliveryDim)
-      .group(deliveryGroup)
-      .keyAccessor(function (d) { return d.key[0] })
-      .valueAccessor(function (d) { return d.key[1] })
-      .colorAccessor(function (d) { return +d.value })
-      .title((d) =>
-`Tempo de entrega real (em dias: ${d.key[0]}
-Tempo de entrega estimado (em dias): ${d.key[1]}
-Quantidade de pedidos: ${d.value}`)
-      .colors(d3.schemeBlues[9])
-      .calculateColorDomain()
+        const colorScale = d3.scaleSequential()
+          .interpolator(d3.interpolateBlues)
+          .domain(d3.extent(heatmapData.values()))
 
-    heatMap.render()
+        svg.selectAll()
+          .data(heatmapData.entries())
+          .enter()
+          .append('rect')
+          .attr('x', d => x(d[0].toString().split(', ')[0])) // x(d.key[0])) // x = wait
+          .attr('y', d => y(d[0].toString().split(', ')[1]))// y = expected wait
+          .attr('rx', 4)
+          .attr('ry', 4)
+          .attr('width', x.bandwidth())
+          .attr('height', y.bandwidth())
+          .style('fill', d => colorScale(d[1]))
+      })
 
     entries.forEach(e => observer.unobserve(e.target))
-  }), { threshold: 0.1 })
+  }, { threshold: 0.1 })
 heatmapObserver.observe(document.querySelector('#heatmap'))

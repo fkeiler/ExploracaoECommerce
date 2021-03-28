@@ -31,16 +31,15 @@ const mapObserver = new IntersectionObserver((entries, observer) => Promise.all(
     const ordersGroupItems = ordersGroup.all();
     
     const ordersPerStateMap = new Map(ordersGroupItems.map(d => [d.key, d.value]))
-    
-    const mapColorScale = d3.scaleQuantile()
-      .domain(ordersGroupItems.flatMap(d => d.value))
-      .range(d3.schemeBlues[6].slice(2))
-    
+
+    const mapColorScale = d3.scaleThreshold()
+    .domain([0, 100, 1000, 10000, 20000, 50000])
+    .range(d3.schemeBlues[8].slice(2))
+  
     // Bars Data
     const initialState = "SP";
     const stateCityDim = facts.dimension(d => [d.dest_state, d.dest_city]);
     const ordersCityGroup = stateCityDim.group();
-    
 
     const cityStatesOrdersItems = ordersCityGroup.top(Infinity);
     
@@ -66,9 +65,15 @@ const mapObserver = new IntersectionObserver((entries, observer) => Promise.all(
 
     // Legend
     const legend = d3.select("#map").append("g")
-    const legendKeys = mapColorScale.range();
+    
+    // Slice removes the first value of the scale,
+    // the first value is not necessary for the vis.
+    
+    const legendKeys = mapColorScale.range().slice(1);
     const boxSize = 20;
-    const legendLabels = mapColorScale.range().map((d) => mapColorScale.invertExtent(d).join(' - '));
+    const legendLabels = mapColorScale.range().slice(1).map(
+      (d) => mapColorScale.invertExtent(d).join(' - ')
+    );
     const offsetX = 10;
     const offsetY = 300;
 

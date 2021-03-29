@@ -33,6 +33,7 @@ const daysHeatmapObserver = new IntersectionObserver((entries, observer) => Prom
       .domain([100, 200, 300, 400, 1000])
       .range(d3.schemeBlues[8].slice(2))
 
+    const months = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
     heatMap
       .width(31 * binSize + 400)
       .height(12 * binSize + 200)
@@ -42,6 +43,7 @@ const daysHeatmapObserver = new IntersectionObserver((entries, observer) => Prom
       .valueAccessor(function (d) { return d.key[1] })
       .colorAccessor(function (d) { return +d.value })
       .title(d => `${d.key[0]}/${d.key[1]}\nPedidos: ${d.value}`)
+      .rowsLabel(d => months[d-1])
       .colors(colorScale)
 
     heatMap.render()

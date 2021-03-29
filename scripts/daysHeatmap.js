@@ -27,7 +27,7 @@ const daysHeatmapObserver = new IntersectionObserver((entries, observer) => Prom
     const deliveryGroup = deliveryDim.group()
 
     const heatMap = dc.heatMap('#days-heatmap')
-    const domain = deliveryGroup.all().flatMap(d => +d.value)
+
     const binSize = 15
     const colorScale = d3.scaleThreshold()
       .domain([100, 200, 300, 400, 1000])

@@ -38,7 +38,7 @@ const rangeFocusObserver = new IntersectionObserver((entries, observer) => Promi
       d.category = categoryLookupMap.get(d.product_id)
       return d
     })
-
+    orderItemsDataset = orderItemsDataset.filter(d => d.category);
     const cf = crossfilter(orderItemsDataset)
     const dimension = cf.dimension(function (d) { return d.category })
     let group = dimension.group()
@@ -60,10 +60,10 @@ const rangeFocusObserver = new IntersectionObserver((entries, observer) => Promi
       .elasticY(true)
       .brushOn(false)
       .dimension(dimension)
-      .mouseZoomable(true)
+      .mouseZoomable(false)
       .zoomScale([4, 8])
       .group(group)
-      .title(d => d.key)
+      .title(d => `Pedidos: ${d.value}`)
       .transitionDuration(0)
 
     focus.xAxis()

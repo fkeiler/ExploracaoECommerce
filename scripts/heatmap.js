@@ -47,7 +47,7 @@ const heatmapObserver = new IntersectionObserver(
           .append('g')
           .attr('transform', `translate(${margin.left}, ${margin.top})`)
 
-        const x = d3.scaleBand()
+        const x = d3.scaleBand() // Escala x: demora real em dias
           .range([0, width])
           .domain([...Array(32).keys()])
           .padding(0.05)
@@ -58,7 +58,7 @@ const heatmapObserver = new IntersectionObserver(
           .attr('transform',
           `translate(${width / 2} , ${height + margin.top + 20} )`)
           .style('text-anchor', 'middle')
-          .text('Date')
+          .text('Demora real (em dias)')
 
         const y = d3.scaleBand() // Escala y: demora esperada em dias
           .range([height, 0])

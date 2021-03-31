@@ -46,7 +46,7 @@ const daysHeatmapObserver = new IntersectionObserver((entries, observer) => Prom
       .rowsLabel(d => months[d-1])
       .colors(colorScale)
 
-    heatMap.render()
+    dc.renderAll();
     entries.forEach(e => observer.unobserve(e.target))
   }), { threshold: 0.1 })
 daysHeatmapObserver.observe(document.querySelector('#days-heatmap'))

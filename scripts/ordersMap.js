@@ -79,7 +79,7 @@ const mapObserver = new IntersectionObserver((entries, observer) => Promise.all(
 
     legend
       .append("text")
-        .text("Legenda")
+        .text("Num. de Pedidos")
         .style("font-family", "Roboto")
         .style("font-size", 16)
         .attr("x", offsetX)
@@ -109,7 +109,7 @@ const mapObserver = new IntersectionObserver((entries, observer) => Promise.all(
     // Tooltip
     const tooltip = d3.select("#pedidos-estado")
       .append("div")
-      .style("opacity", 0)
+      .style("display", "none")
       .style("position", "absolute")
       .attr("class", "tooltip")
       .style("background-color", "white")
@@ -134,11 +134,11 @@ const mapObserver = new IntersectionObserver((entries, observer) => Promise.all(
           .style('cursor', 'pointer')
           .attr('stroke-width', 2)
         tooltip
-          .style("opacity", 1)
+          .style("display", "block")
       })
       .on('mouseout', function (d) { // hide tooltip
         tooltip
-          .style("opacity", 0)
+          .style("display", "none")
         d3.select(this)
           .style('cursor', 'default')
           .attr('stroke-width', 'none')
@@ -155,7 +155,7 @@ const mapObserver = new IntersectionObserver((entries, observer) => Promise.all(
       })
 
       barChart
-        .width(960)
+        .width(600)
         .height(480)
         .margins({ top: 50, right: 50, bottom: 50, left: 50 })
         .dimension(stateCityDim)

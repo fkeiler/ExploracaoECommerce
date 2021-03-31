@@ -34,7 +34,7 @@
         <div class="group">
             <div id="pedidos-estado" class="chart">
                 <h1>Número de Pedidos por Estado</h1>
-                <svg id="map"></svg>
+                <div id="map"></div>
             </div>
             <div id="pedidos-cidades" class="chart">
                 <h1>Número de pedidos por cidade</h1>
@@ -56,8 +56,9 @@
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/crossfilter2@1.5.4/crossfilter.min.js"></script>
     <script src="https://unpkg.com/dc@4/dist/dc.js"></script>
-    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
-    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
     <script src="scripts/heatmap.js"></script>
     <script src="scripts/salesOverTime.js"></script>
     <script src="scripts/dotPlotDemora.js"></script>

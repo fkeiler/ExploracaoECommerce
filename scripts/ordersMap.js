@@ -12,166 +12,165 @@ function filterGroupCities(items, state){
   }
 }
 
-const mapObserver = new IntersectionObserver((entries, observer) => Promise.all(flowPromises).then(
-  ([geoData, customersDataset, ordersDataset]) => {
-    const customersState = new Map(customersDataset.map(d => [d.customer_id, [d.customer_state, d.customer_city]]))
+Promise.all(flowPromises).then(([geoData, customersDataset, ordersDataset]) => {
+  const customersState = new Map(customersDataset.map(d => [d.customer_id, [d.customer_state, d.customer_city]]))
 
-    ordersDataset.forEach(function (d) {
-      let data = customersState.get(d.customer_id);
-      d["dest_state"] = data[0]
-      d["dest_city"] = data[1] 
-    })
+  ordersDataset.forEach(function (d) {
+    let data = customersState.get(d.customer_id);
+    d["dest_state"] = data[0]
+    d["dest_city"] = data[1] 
+  })
 
 
-    const facts = crossfilter(ordersDataset);
-    
-    // Map Data
-    const statesDim = facts.dimension(d => d.dest_state);
-    const ordersGroup = statesDim.group();
-    const ordersGroupItems = ordersGroup.all();
-    
-    const ordersPerStateMap = new Map(ordersGroupItems.map(d => [d.key, d.value]))
-
-    const mapColorScale = d3.scaleThreshold()
-    .domain([0, 100, 1000, 10000, 20000, 50000])
-    .range(d3.schemeBlues[8].slice(2))
+  const facts = crossfilter(ordersDataset);
   
-    // Bars Data
-    const initialState = "SP";
-    const stateCityDim = facts.dimension(d => [d.dest_state, d.dest_city]);
-    const ordersCityGroup = stateCityDim.group();
+  // Map Data
+  const statesDim = facts.dimension(d => d.dest_state);
+  const ordersGroup = statesDim.group();
+  const ordersGroupItems = ordersGroup.all();
+  
+  const ordersPerStateMap = new Map(ordersGroupItems.map(d => [d.key, d.value]))
 
-    const cityStatesOrdersItems = ordersCityGroup.top(Infinity);
-    
-    const ordersPerCityGroup = filterGroupCities(cityStatesOrdersItems, initialState);
-    
-    const ordersCitiesScale = d3.scaleOrdinal()
-      .domain(cityStatesOrdersItems.flatMap(d => d.key[1]))
-    
-    const barChart = dc.barChart('#pedidos-cidades');
-    
-    //  ----     Map      -----
-    const svg = d3.select('#map')
-      .attr('width', 600)
-      .attr('height', 480)
-      .attr('viewbox', '0 0 100 100')
-    const width = +svg.attr('width')
-    const height = +svg.attr('height')
+  const mapColorScale = d3.scaleThreshold()
+  .domain([0, 100, 1000, 10000, 20000, 50000])
+  .range(d3.schemeBlues[8].slice(2))
 
-    // Map and projection
-    const projection = d3.geoMercator()
-      .scale(4 * width / 1.3 / Math.PI)
-      .translate([3 * width / 2, height / 8])
+  // Bars Data
+  const initialState = "SP";
+  const stateCityDim = facts.dimension(d => [d.dest_state, d.dest_city]);
+  const ordersCityGroup = stateCityDim.group();
 
-    // Legend
-    const legend = d3.select("#map").append("g")
-    
-    // Slice removes the first value of the scale,
-    // the first value is not necessary for the vis.
-    
-    const legendKeys = mapColorScale.range().slice(1);
-    const boxSize = 20;
-    const legendLabels = mapColorScale.range().slice(1).map(
-      (d) => mapColorScale.invertExtent(d).join(' - ')
-    );
-    const offsetX = 10;
-    const offsetY = 300;
-
-    legend
-      .append("text")
-        .text("Num. de Pedidos")
-        .style("font-family", "Roboto")
-        .style("font-size", 16)
-        .attr("x", offsetX)
-        .attr("y", offsetY - 10)    
-    
-    legend.selectAll("box-colors")
-      .data(legendKeys)
-      .enter()
-      .append("rect")
-        .attr("x", offsetX)
-        .attr("y", (d, i) => (offsetY + i*(boxSize + 5)) + "px")
-        .attr("width", boxSize)
-        .attr("height", boxSize)
-        .style("fill", d => d)
-    
-    legend.selectAll("box-labels")
-      .data(legendLabels)
-      .enter()
-      .append("text")
-        .attr("x", offsetX + boxSize + 5)
-        .attr("y", (d, i) => (offsetY + i*(boxSize + 5) + boxSize/2 + 5) + "px")
-        .text(d => d)
-        .style("alignment-baseline", "middle")
-        .style("font-family", "Roboto")
-        .style("font-size", 12)
-    
-    // Tooltip
-    const tooltip = d3.select("#pedidos-estado")
-      .append("div")
-      .style("display", "none")
-      .style("position", "absolute")
-      .attr("class", "tooltip")
-      .style("background-color", "white")
-      .style("border", "solid")
-      .style("border-width", "2px")
-      .style("border-radius", "5px")
-      .style("padding", "5px")
-
-    // Draw the map
-    svg.append('g')
-      .selectAll('path')
-      .data(geoData.features)
-      .enter()
-      .append('path')
-      .attr('fill', d => mapColorScale(ordersPerStateMap.get(d.properties.sigla)))
-      .attr('d', d3.geoPath()
-        .projection(projection)
-      )
-      .style('stroke', '#fff')
-      .on('mouseover', function (d, data) { // show tooltip
-        d3.select(this)
-          .style('cursor', 'pointer')
-          .attr('stroke-width', 2)
-        tooltip
-          .style("display", "block")
-      })
-      .on('mouseout', function (d) { // hide tooltip
-        tooltip
-          .style("display", "none")
-        d3.select(this)
-          .style('cursor', 'default')
-          .attr('stroke-width', 'none')
-      })
-      .on("mousemove", function(d, data){ // Bind tooltip to data
-        tooltip
-        .html(`Estado:${data.properties.sigla}<br>Quantidade de Pedidos: ${ordersPerStateMap.get(data.properties.sigla)}`)
-        .style("left", (d.layerX + 20) + "px")
-        .style("top", (d.layerY) + "px")
-      })
-      .on("click", function(d, data){ // Filter Bars group and redraw
-        barChart.group(filterGroupCities(cityStatesOrdersItems, data.properties.sigla));
-        barChart.render();
-      })
-
-      barChart
-        .width(600)
-        .height(480)
-        .margins({ top: 50, right: 50, bottom: 50, left: 50 })
-        .dimension(stateCityDim)
-        .group(ordersPerCityGroup)
-        .keyAccessor(d => d.key[1])
-        .x(ordersCitiesScale)
-        .xUnits(dc.units.ordinal)
-        .elasticX(true)
-        .elasticY(true)
-        .ordering(d => -d.value)
-        .yAxisLabel('Quantidade de Pedidos')
-        .xAxisLabel('Cidades')
+  const cityStatesOrdersItems = ordersCityGroup.top(Infinity);
+  
+  const ordersPerCityGroup = filterGroupCities(cityStatesOrdersItems, initialState);
+  
+  const ordersCitiesScale = d3.scaleOrdinal()
+    .domain(cityStatesOrdersItems.flatMap(d => d.key[1]))
+  
+  // Slice removes the first value of the scale,
+  // the first value is not necessary for the vis.
+  
+  const legendKeys = mapColorScale.range().slice(1);
+  const legendLabels = mapColorScale.range().slice(1).map(
+    (d) => mapColorScale.invertExtent(d).join(' - ')
+  );
+  
       
+  const barChart = dc.barChart('#pedidos-cidades');
+  
+  // Map
+  let mapInstance = L.map('map', {scrollWheelZoom: false}).setView([-15.749997, -47.9499962], 4);
+  L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png", {
+              attribution:  `&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>,
+Map tiles by &copy; <a href="https://carto.com/attribution">CARTO</a>`,
+              maxZoom: 18
+              }).addTo(mapInstance)
+  
+  let geoJson;
+  
+  // Tooltip
+  const info = L.control();
+
+  info.onAdd = function (map) {
+      this._div = L.DomUtil.create('div', 'info');
+      this.update();
+      return this._div;
+  };
+
+  info.update = function (props) {
+      this._div.innerHTML = '<h4>Número de Pedidos por Estado</h4>' + "Estado: " + (props ?
+          '<b>' + props.name + '</b><br />' + ordersPerStateMap.get(props.sigla) + ' Pedidos'
+          : 'Passe o mouse pelo estado');
+  };
+
+  // Color scheme config
+  function style(feature){
+      return {
+          fillColor: mapColorScale(ordersPerStateMap.get(feature.properties.sigla)),
+          weight: 1,
+          opacity: 1,
+          color: 'white',
+          dashArray: '1',
+          fillOpacity: 0.8
+      };
+  }
+
+  // Features
+  function highlightFeature(e) {
+      let layer = e.target;
+  
+      layer.setStyle({
+          weight: 3,
+          color: '#fff',
+          dashArray: '',
+          fillOpacity: 0.7
+      });
+  
+      if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+          layer.bringToFront();
+      }
+      info.update(layer.feature.properties);
+  }
+
+  function resetHighlight(e) {
+      geoJson.resetStyle(e.target);
+      info.update();
+
+  }
+  
+  function filterBarsFeature(e) {
+      let data = e.target.feature
+      
+      barChart.group(filterGroupCities(cityStatesOrdersItems, data.properties.sigla));
       barChart.render();
-      entries.forEach(e => observer.unobserve(e.target))
-  }), { threshold: 0.1 })
+  }    
+  
+  function onEachFeature(feature, layer) {
+      layer.on({
+          mouseover: highlightFeature,
+          mouseout: resetHighlight,
+          click: filterBarsFeature
+      });
+  }
 
+  geoJson = L.geoJson(geoData, {
+      style: style,
+      onEachFeature: onEachFeature
+  }).addTo(mapInstance);
+  info.addTo(mapInstance);
 
-mapObserver.observe(document.querySelector('#map'))
+  // Legend
+  const legend = L.control({position: 'bottomright'});
+
+  legend.onAdd = function (map) {
+
+      let div = L.DomUtil.create('div', 'info legend')
+
+      for (let i = 0; i < legendKeys.length; i++) {
+          div.innerHTML +=
+              '<i style="background:' + legendKeys[i] + '"></i> ' + legendLabels[i] + "<br/>"
+      }
+
+      return div;
+  };
+
+  legend.addTo(mapInstance)
+
+  // Bar Chart Config
+  barChart
+  .width(600)
+  .height(480)
+  .margins({ top: 50, right: 50, bottom: 50, left: 50 })
+  .dimension(stateCityDim)
+  .group(ordersPerCityGroup)
+  .keyAccessor(d => d.key[1])
+  .x(ordersCitiesScale)
+  .xUnits(dc.units.ordinal)
+  .elasticX(true)
+  .elasticY(true)
+  .ordering(d => -d.value)
+  .yAxisLabel('Quantidade de Pedidos')
+  .xAxisLabel('Cidades')
+
+  barChart.render();
+})

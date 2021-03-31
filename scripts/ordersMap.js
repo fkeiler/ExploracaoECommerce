@@ -146,6 +146,7 @@ Map tiles by &copy; <a href="https://carto.com/attribution">CARTO</a>`,
 
       let div = L.DomUtil.create('div', 'info legend')
 
+      div.innerHTML = "<b>Número de Pedidos</b><br/>"
       for (let i = 0; i < legendKeys.length; i++) {
           div.innerHTML +=
               '<i style="background:' + legendKeys[i] + '"></i> ' + legendLabels[i] + "<br/>"

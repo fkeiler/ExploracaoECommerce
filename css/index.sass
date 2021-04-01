@@ -2,7 +2,9 @@
 ---
 
 body
+  min-height: 100vh
   margin: 0
+  overflow-y: scroll
   padding: 0
 
 .background
@@ -32,6 +34,10 @@ main
   min-height: 100%
   max-width: 100%
   background: #fafafa
+  scroll-snap-type: mandatory
+  scroll-snap-points: repeat(100vh)
+  scroll-snap-type: y mandatory
+  width: 100%
 
 .group
   display: flex
@@ -47,12 +53,19 @@ main
   flex-direction: column
   align-items: center
   justify-content: space-around
-
+  scroll-snap-align: start
   max-width: 100%
   height: auto
+
+  &:nth-child(2n+1)
+    background: #ffffff
+    
+  &:nth-child(2n)
+    background: #fafafa
   
   h1
     font-family: sans-serif
+
 
 #focus .axis.x .tick text
   text-anchor: end

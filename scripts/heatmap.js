@@ -89,6 +89,28 @@ const heatmapObserver = new IntersectionObserver(
           .attr('width', x.bandwidth())
           .attr('height', y.bandwidth())
           .style('fill', d => colorScale(d[1]))
+
+        svg.append('line')
+          .attr('x1', x(0))
+          .attr('x2', x(18))
+          .attr('y1', y(13))
+          .attr('y2', y(31))
+          .attr('stroke', 'red')
+          .attr('stroke-opacity', '0.5')
+          .attr('stroke-width', '3')
+
+        svg.append('text')
+          .attr('x', x(18))
+          .attr('y', y(31))
+          .text('2 semanas antes do esperado')
+          .style('color', 'red')
+
+        svg.append('line')
+          .attr('x1', x(0))
+          .attr('x2', x(31) + x.bandwidth())
+          .attr('y1', y(0) + y.bandwidth())
+          .attr('y2', y(31))
+          .attr('stroke', 'green')
       })
 
     entries.forEach(e => observer.unobserve(e.target))

@@ -29,11 +29,23 @@ const daysHeatmapObserver = new IntersectionObserver((entries, observer) => Prom
     const heatMap = dc.heatMap('#days-heatmap')
 
     const binSize = 15
-    const colorScale = d3.scaleThreshold()
-      .domain([100, 200, 300, 400, 1000])
-      .range(d3.schemeBlues[8].slice(2))
+    const colorScale = d3.scaleSequential()
+      .interpolator(d3.interpolateBlues)
+      .domain(d3.extent(deliveryGroup.all().flatMap(d => d.value)))
 
-    const months = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+    const months = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
+    
+    let tooltip = d3.select("#days-heatmap")
+      .append("div")
+      .style("display", "none")
+      .attr("class", "tooltip")
+      .style("position", "absolute")
+      .style("background-color", "white")
+      .style("border", "solid")
+      .style("border-width", "2px")
+      .style("border-radius", "5px")
+      .style("padding", "5px");
+    
     heatMap
       .width(31 * binSize + 400)
       .height(12 * binSize + 200)
@@ -42,11 +54,23 @@ const daysHeatmapObserver = new IntersectionObserver((entries, observer) => Prom
       .keyAccessor(function (d) { return d.key[0] })
       .valueAccessor(function (d) { return d.key[1] })
       .colorAccessor(function (d) { return +d.value })
-      .title(d => `${d.key[0]}/${d.key[1]}\nPedidos: ${d.value}`)
       .rowsLabel(d => months[d-1])
+      .title(d => "")
       .colors(colorScale)
+      .on('pretransition.add-tip', function(chart) {
+        chart.selectAll('g.box-group')
+            .on('mouseover', d => tooltip.style("display", "block"))
+            .on('mouseout', d => tooltip.style("display", "none"))
+            .on("mousemove", (e, d) => {
+              tooltip
+                .html(`Data: ${d.key[0]}/${d.key[1]}<br/>Pedidos: ${+d.value}`)
+                .style("left", `${(e.layerX+20)}px`)
+                .style("top", `${(e.layerY)}px`)
+            })
+      });
 
-    heatMap.render()
+    heatMap.render();
+
     entries.forEach(e => observer.unobserve(e.target))
   }), { threshold: 0.1 })
 daysHeatmapObserver.observe(document.querySelector('#days-heatmap'))

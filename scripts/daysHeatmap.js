@@ -29,11 +29,11 @@ const daysHeatmapObserver = new IntersectionObserver((entries, observer) => Prom
     const heatMap = dc.heatMap('#days-heatmap')
 
     const binSize = 15
-    const colorScale = d3.scaleThreshold()
-      .domain([100, 200, 300, 400, 1000])
-      .range(d3.schemeBlues[8].slice(2))
+    const colorScale = d3.scaleSequential()
+      .interpolator(d3.interpolateBlues)
+      .domain(d3.extent(deliveryGroup.all().flatMap(d => d.value)))
 
-    const months = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+    const months = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
     
     let tooltip = d3.select("#days-heatmap")
       .append("div")
@@ -44,7 +44,7 @@ const daysHeatmapObserver = new IntersectionObserver((entries, observer) => Prom
       .style("border", "solid")
       .style("border-width", "2px")
       .style("border-radius", "5px")
-      .style("padding", "5px")
+      .style("padding", "5px");
     
     heatMap
       .width(31 * binSize + 400)
@@ -69,7 +69,8 @@ const daysHeatmapObserver = new IntersectionObserver((entries, observer) => Prom
             })
       });
 
-    heatMap.render()
+    heatMap.render();
+
     entries.forEach(e => observer.unobserve(e.target))
   }), { threshold: 0.1 })
 daysHeatmapObserver.observe(document.querySelector('#days-heatmap'))

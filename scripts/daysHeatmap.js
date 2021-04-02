@@ -38,7 +38,6 @@ const daysHeatmapObserver = new IntersectionObserver((entries, observer) => Prom
     let tooltip = d3.select("#days-heatmap")
       .append("div")
       .style("display", "none")
-      .attr("class", "tooltip")
       .style("position", "absolute")
       .style("background-color", "white")
       .style("border", "solid")
@@ -64,8 +63,8 @@ const daysHeatmapObserver = new IntersectionObserver((entries, observer) => Prom
             .on("mousemove", (e, d) => {
               tooltip
                 .html(`Data: ${d.key[0]}/${d.key[1]}<br/>Pedidos: ${+d.value}`)
-                .style("left", `${(e.layerX+20)}px`)
-                .style("top", `${(e.layerY)}px`)
+                .style("left", `${(e.clientX+20)}px`)
+                .style("top", `${(e.clientY)}px`)
             })
       });
 

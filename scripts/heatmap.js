@@ -37,6 +37,7 @@ const heatmapObserver = new IntersectionObserver(
           right: 10,
           bottom: 50
         }
+        const tooltip = d3.select('#tooltip')
         const dimMin = Math.min(window.innerWidth, window.innerHeight) * 0.8 // 80vmin
         const width = dimMin - margin.left - margin.right
         const height = dimMin - margin.top - margin.bottom
@@ -89,6 +90,33 @@ const heatmapObserver = new IntersectionObserver(
           .attr('width', x.bandwidth())
           .attr('height', y.bandwidth())
           .style('fill', d => colorScale(d[1]))
+          .attr('stroke', '#343434')
+          .attr('stroke-width', '0')
+          .on('mouseover', function (event, d) {
+            const [demoraEmDias, demoraEsperada] = d[0].toString().split(', ').map(i => parseInt(i))
+            d3.select(this).attr('stroke-width', 1)
+            tooltip.style('left', event.clientX)
+            tooltip.style('top', event.clientY)
+            tooltip.html(
+              `<h3>Demora esperada: ${demoraEsperada} dias<br/>
+              Demora real: ${demoraEmDias} dias</h3>` +
+              `<h4> (${(demoraEmDias === demoraEsperada
+                ? 'No prazo!'
+                : (demoraEmDias > demoraEsperada
+                    ? `Atrasado em ${demoraEmDias - demoraEsperada} dias`
+                    : `Adiantado em ${demoraEsperada - demoraEmDias} dias`))}) </h4><br/>` +
+              `<h4>Quantidade de pedidos: ${d[1]}</h4>`
+            )
+          })
+          .on('mousemove', function (event) {
+            tooltip.style('left', event.clientX)
+            tooltip.style('top', event.clientY)
+          })
+          .on('mouseout', function (event) {
+            d3.select(this).attr('stroke-width', 0)
+            tooltip.style('left', '-100%')
+            tooltip.style('top', '-100%')
+          })
 
         svg.append('line')
           .attr('x1', x(0))
@@ -98,6 +126,7 @@ const heatmapObserver = new IntersectionObserver(
           .attr('stroke', 'red')
           .attr('stroke-opacity', '0.5')
           .attr('stroke-width', '3')
+          .attr('pointer-events', 'none')
 
         svg.append('text')
           .attr('x', x(18))

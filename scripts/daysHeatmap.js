@@ -1,5 +1,5 @@
 const daysHeatmapPromises = [
-  d3.csv('./data/olist_orders_dataset.csv')
+  d3.csv('./data/raw_data/olist_orders_dataset.csv')
 ]
 
 const daysHeatmapObserver = new IntersectionObserver((entries, observer) => Promise.all(daysHeatmapPromises).then(

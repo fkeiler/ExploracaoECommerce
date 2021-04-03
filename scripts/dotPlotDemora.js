@@ -1,7 +1,7 @@
 const dotPlotDemoraObserver = new IntersectionObserver((entries, observer) =>
   Promise.all([
-    d3.csv('./data/olist_orders_dataset.csv'),
-    d3.csv('./data/olist_customers_dataset.csv')
+    d3.csv('./data/raw_data/olist_orders_dataset.csv'),
+    d3.csv('./data/raw_data/olist_customers_dataset.csv')
   ]).then(function ([datasetOrders, datasetCustomers]) {
     const stateLookupMap = new Map(datasetCustomers.map(c => [c.customer_id, c.customer_state]))
     return [datasetOrders, stateLookupMap]

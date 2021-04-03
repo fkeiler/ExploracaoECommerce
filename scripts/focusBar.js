@@ -1,6 +1,6 @@
 const focusPromises = [
-  d3.csv('./data/olist_order_items_dataset.csv'),
-  d3.csv('./data/olist_products_dataset.csv')
+  d3.csv('./data/raw_data/olist_order_items_dataset.csv'),
+  d3.csv('./data/raw_data/olist_products_dataset.csv')
 ]
 
 const rangeFocusObserver = new IntersectionObserver((entries, observer) => Promise.all(focusPromises).then(

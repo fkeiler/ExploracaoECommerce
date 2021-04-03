@@ -1,4 +1,4 @@
-const pieObserver = new IntersectionObserver((entries, observer) => d3.csv('./data/olist_orders_dataset.csv').then(
+const pieObserver = new IntersectionObserver((entries, observer) => d3.csv('./data/raw_data/olist_orders_dataset.csv').then(
   (ordersDataset) => {
     function getDiferenceInDays (initialDate, finalDate) {
       if (!initialDate || !finalDate) { return null }

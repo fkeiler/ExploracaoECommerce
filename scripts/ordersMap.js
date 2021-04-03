@@ -1,7 +1,7 @@
 const flowPromises = [
   d3.json('https://raw.githubusercontent.com/codeforamerica/click_that_hood/master/public/data/brazil-states.geojson'),
-  d3.csv('./data/olist_customers_dataset.csv'),
-  d3.csv('./data/olist_orders_dataset.csv', [['order_id', 'customer_id']])
+  d3.csv('./data/raw_data/olist_customers_dataset.csv'),
+  d3.csv('./data/raw_data/olist_orders_dataset.csv', [['order_id', 'customer_id']])
 ]
     
 function filterGroupCities(items, state){

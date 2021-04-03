@@ -1,10 +1,9 @@
 const focusPromises = [
-  d3.csv('./data/raw_data/olist_order_items_dataset.csv'),
-  d3.csv('./data/raw_data/olist_products_dataset.csv')
+  d3.csv('./data/orders_products_timestamp.csv')
 ]
 
-const rangeFocusObserver = new IntersectionObserver((entries, observer) => Promise.all(focusPromises).then(
-  function ([orderItemsDataset, productsDataset]) {
+const ordersViewsObserver = new IntersectionObserver((entries, observer) => Promise.all(focusPromises).then(
+  function ([orderItemsDataset]) {
     // index a group key -> i and i -> key
     function ordinal_to_linear_group (group, sort) {
       let _ord2int, _int2ord
@@ -31,21 +30,21 @@ const rangeFocusObserver = new IntersectionObserver((entries, observer) => Promi
     }
 
     dc.constants.EVENT_DELAY = 10
-
-    const categoryLookupMap = new Map(productsDataset.map(d => [d.product_id, d.product_category_name]))
-
-    orderItemsDataset.forEach(function (d) {
-      d.category = categoryLookupMap.get(d.product_id)
-      return d
+    
+    orderItemsDataset.forEach(function(d){
+      d.order_purchase_timestamp = new Date(d.order_purchase_timestamp)
     })
-    orderItemsDataset = orderItemsDataset.filter(d => d.category);
+    
     const cf = crossfilter(orderItemsDataset)
-    const dimension = cf.dimension(function (d) { return d.category })
+    
+    // ----- Focus Bar Code ----- //
+    const dimension = cf.dimension(function (d) { return d.product_category_name })
     let group = dimension.group()
 
     const size = group.size()
+    
     group = ordinal_to_linear_group(group)
-
+    
     focus = new dc.BarChart('#focus')
     const linear_domain = [-0.5, size + 0.5]
     focus
@@ -137,11 +136,83 @@ const rangeFocusObserver = new IntersectionObserver((entries, observer) => Promi
 
     focus
       .rangeChart(range)
+    
+    // ----- Sales over time Line Chart ----- //
+    const dateDimension = cf.dimension(d => d3.timeDay(d.order_purchase_timestamp))
+    const dateScale = d3
+      .scaleTime()
+      .domain(d3.extent(orderItemsDataset, d => d.order_purchase_timestamp))
+
+    const ymd = d3.timeFormat('%Y-%m-%d')
+    
+    const timeChart = dc.lineChart('#sales-over-time')
+    timeChart.width(960)
+    .height(400)
+    .margins({ top: 60, right: 10, bottom: 40, left: 40 })
+    .dimension(dateDimension)
+    .group(dateDimension.group())
+    .x(dateScale)
+    .brushOn(true)
+    .title((d) => `${ymd(d.key)}: ${d.value} pedidos`)
+    
+    // ----- Days Heatmap ----- //
+    const deliveryDim = cf.dimension(d => [d.order_purchase_timestamp.getDate(), d.order_purchase_timestamp.getMonth() + 1, d.order_purchase_timestamp.getFullYear()])
+    const deliveryGroup = deliveryDim.group()
+    
+    const filteredDeliveryItems = deliveryGroup.all().filter(d => d.key[2] === 2017)
+    const filteredDeliveryGroup = {
+      all: function(){ return filteredDeliveryItems; }
+    }
+    
+    const binSize = 15
+    const colorScale = d3.scaleSequential()
+      .interpolator(d3.interpolateBlues)
+      .domain(d3.extent(deliveryGroup.all().flatMap(d => d.value)))
+
+    const months = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
+  
+    let tooltip = d3.select("#days-heatmap")
+      .append("div")
+      .style("display", "none")
+      .style("position", "absolute")
+      .style("background-color", "white")
+      .style("border", "solid")
+      .style("border-width", "2px")
+      .style("border-radius", "5px")
+      .style("padding", "5px");
+    
+    const heatMap = dc.heatMap('#days-heatmap')
+
+    heatMap
+    .width(31 * binSize + 400)
+    .height(12 * binSize + 200)
+    .dimension(deliveryDim)
+    .group(filteredDeliveryGroup)
+    .keyAccessor(function (d) { return d.key[0] })
+    .valueAccessor(function (d) { return d.key[1] })
+    .colorAccessor(function (d) { return +d.value })
+    .rowsLabel(d => months[d-1])
+    .title(d => "")
+    .colors(colorScale)
+    .on('pretransition.add-tip', function(chart) {
+      chart.selectAll('g.box-group')
+          .on('mouseover', d => tooltip.style("display", "block"))
+          .on('mouseout', d => tooltip.style("display", "none"))
+          .on("mousemove", (e, d) => {
+            tooltip
+              .html(`Data: ${d.key[0]}/${d.key[1]}<br/>Pedidos: ${+d.value}`)
+              .style("left", `${(e.clientX+20)}px`)
+              .style("top", `${(e.clientY)}px`)
+          })
+    });
+
 
     dc.renderAll()
     focus
       .focus([-0.5, 20])
-
     entries.forEach(e => observer.unobserve(e.target))
   }), { threshold: 0.1 })
-rangeFocusObserver.observe(document.querySelector('#range-focus'))
+
+ordersViewsObserver.observe(document.querySelector('#range-focus'))
+ordersViewsObserver.observe(document.querySelector('#days-heatmap'))
+ordersViewsObserver.observe(document.querySelector('#sales-over-time'))

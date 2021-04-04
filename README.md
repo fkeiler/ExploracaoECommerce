@@ -20,6 +20,6 @@ bundle install
 ```
 e, em seguida, rodar
 ```sh
-eeeeebundl xc jkyll install
+bundle exec jekyll install
 ```
 O site deve estar disponível em localhost:4000

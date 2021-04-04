@@ -65,6 +65,16 @@ section {
     scroll-snap-align: center;
 }
 
+.area-title {
+    background: linear-gradient(to right, transparent, white, transparent);
+    font-family: sans-serif;
+    font-size: 2rem;
+    padding: 1ch;
+    scroll-snap-align: center;
+    text-align: center;
+    width: 100%;
+}
+
 .group {
     display: flex;
     justify-content: space-around;

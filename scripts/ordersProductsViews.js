@@ -49,7 +49,7 @@ const ordersViewsObserver = new IntersectionObserver((entries, observer) => Prom
     const linear_domain = [-0.5, size + 0.5]
     focus
       .width(800).height(330)
-      .margins({ left: 60, top: 10, right: 20, bottom: 100 })
+      .margins({ left: 60, top: 10, right: 20, bottom: 200 })
       .x(d3.scaleLinear().domain(linear_domain))
       .xUnits(dc.units.integers)
       .keyAccessor(d => group.ord2int(d.key))

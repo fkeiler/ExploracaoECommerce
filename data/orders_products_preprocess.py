@@ -10,4 +10,5 @@ df_products = pd.read_csv("./raw_data/olist_products_dataset.csv", usecols=['pro
 merge = pd.merge(df_orders, df_orders_items, on="order_id")
 merge = pd.merge(merge, df_products, on="product_id")
 
+merge.product_category_name.fillna("sem_categoria", inplace=True)
 merge.to_csv("orders_products_timestamp.csv", index=False)

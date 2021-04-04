@@ -6,3 +6,4 @@ Gemfile
 Gemfile.lock
 .DS_Store
 .code
+.vscode

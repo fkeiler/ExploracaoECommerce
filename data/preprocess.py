@@ -29,7 +29,7 @@ with open('shipping_heatmap.csv', 'w') as heatmap_file:
     heatmap_file.close()
 
 # Arquivo do Chord Diagram
-siglas_estados = ["AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO"]
+siglas_estados = ["SP", "RJ", "MG", "RS"]
 mapVendedores = {}
 with open('raw_data/olist_sellers_dataset.csv') as sellers_dataset:
     for seller in csv.DictReader(sellers_dataset):
@@ -55,14 +55,19 @@ for customer in customerList:
         mapPedidos[orderList[orderIdx]['order_id']] = customer['customer_state']
         orderIdx += 1
 
-n_pedidos_estado = [[0 for x in siglas_estados] for y in siglas_estados]
+n_pedidos_estado = [[0 for x in range(5)] for y in range(5)]
 with open('raw_data/olist_order_items_dataset.csv') as order_items_dataset:
     for item in csv.DictReader(order_items_dataset):
         if item['order_id'] in mapPedidos and item['seller_id'] in mapVendedores:
             estadoOrigem = mapPedidos[item['order_id']]
             estadoDestino = mapVendedores[item['seller_id']]
-            if estadoOrigem in siglas_estados and estadoDestino in siglas_estados:
-                n_pedidos_estado[siglas_estados.index(estadoOrigem)][siglas_estados.index(estadoDestino)] += 1
+            idxOrigem = 4
+            idxDestino = 4
+            if estadoOrigem in siglas_estados:
+                idxOrigem = siglas_estados.index(estadoOrigem)
+            if estadoDestino in siglas_estados:
+                idxDestino = siglas_estados.index(estadoDestino)
+            n_pedidos_estado[idxOrigem][idxDestino] += 1
 
 with open('shipping_chordDiagram.csv', 'w') as chord_file:
     chord_dataset = csv.writer(chord_file)

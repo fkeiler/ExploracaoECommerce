@@ -1,0 +1,4311 @@
+estado,cidade,n_pedidos
+SP,osasco,746
+MG,itapecerica,13
+ES,nova venecia,19
+MG,mendonca,1
+SP,sao paulo,15540
+SP,valinhos,183
+RJ,niteroi,849
+RJ,rio de janeiro,6882
+RS,ijui,52
+MG,oliveira,22
+RS,novo hamburgo,123
+BA,vitoria da conquista,92
+SP,campinas,1444
+SP,jacarei,194
+RS,colorado,3
+RS,frederico westphalen,14
+SP,piracaia,22
+CE,parambu,4
+MG,uberlandia,374
+RS,porto alegre,1379
+SP,ibiuna,31
+MG,belo horizonte,2773
+SP,sao jose dos campos,691
+RJ,mage,111
+PR,curitiba,1521
+SP,santo andre,796
+SP,pirassununga,69
+SP,guaruja,226
+SP,cotia,250
+MS,campo grande,320
+SP,campos do jordao,26
+PB,joao pessoa,256
+SP,itupeva,44
+SC,agronomica,2
+MG,sobralia,1
+SC,chapeco,103
+SP,aguai,10
+SP,biritiba-mirim,10
+RJ,rio das ostras,137
+MG,bueno brandao,4
+BA,itacare,8
+SP,sao manuel,21
+PB,cabedelo,7
+SP,jundiai,565
+MG,juiz de fora,427
+SP,sao bernardo do campo,938
+SP,ribeirao preto,510
+PR,ponta grossa,143
+RJ,itaborai,60
+RS,sapiranga,26
+RS,caxias do sul,224
+MS,tres lagoas,42
+PR,corbelia,3
+RJ,mesquita,75
+SP,capao bonito,28
+CE,fortaleza,654
+BA,salvador,1245
+SC,tijucas,30
+SP,monte mor,40
+SP,cacapava,74
+SP,atibaia,159
+MG,betim,203
+PR,palmeira,13
+PR,paranavai,47
+MT,cuiaba,248
+PR,nova esperanca,8
+SP,jaboticabal,54
+MG,guimarania,4
+SP,bertioga,49
+MT,pedra preta,4
+PA,belem,443
+SP,indiana,3
+SP,mogi das cruzes,383
+MG,varginha,89
+MT,diamantino,7
+SC,santa cecilia,6
+ES,serra,285
+SP,maua,323
+RS,canela,18
+BA,mascote,2
+BA,trancoso,6
+MG,montalvania,3
+RS,julio de castilhos,10
+SP,aruja,69
+RN,mossoro,37
+PI,teresina,281
+SP,sumare,183
+PR,maringa,271
+DF,brasilia,2131
+MG,coromandel,25
+RJ,nova friburgo,152
+RS,estrela,16
+SP,botucatu,101
+PR,quatro barras,18
+SC,criciuma,93
+PA,altamira,25
+RS,passo fundo,113
+PR,ampere,9
+SP,ibate,13
+ES,vitoria,379
+SC,itajai,120
+MG,tres coracoes,43
+SC,florianopolis,570
+SP,bauru,273
+MG,alvinopolis,11
+SP,paulinia,130
+RJ,campos dos goytacazes,238
+SP,suzano,234
+MG,machado,21
+SP,marilia,196
+GO,goiania,692
+RS,dom pedrito,10
+SP,tremembe,38
+RJ,sapucaia,5
+MG,extrema,40
+PE,cabo de santo agostinho,21
+SP,carapicuiba,328
+RO,seringueiras,2
+PE,recife,613
+MG,ouro fino,16
+MA,cedral,3
+SP,indaiatuba,280
+RJ,vassouras,37
+GO,jatai,54
+MG,morada nova de minas,3
+RJ,petropolis,240
+SP,cerquilho,30
+RS,santiago,26
+GO,posse,17
+SC,joinville,264
+RS,sao leopoldo,105
+SP,louveira,44
+PR,cascavel,148
+MA,sao jose de ribamar,14
+SP,vargem grande paulista,44
+RS,rosario do sul,14
+BA,jacobina,24
+RJ,sao pedro da aldeia,46
+GO,itumbiara,36
+SP,santos,713
+SP,votorantim,85
+SE,ribeiropolis,1
+SP,cruzalia,3
+MG,itajuba,94
+SP,tatui,75
+RO,porto velho,113
+SC,porto belo,9
+MG,carmo do rio claro,9
+AM,manaus,140
+SP,matao,52
+PI,cocal,8
+MG,montes claros,211
+MG,arapora,5
+RS,erechim,58
+SP,boituva,50
+RJ,nova iguacu,442
+MG,sao jose do divino,1
+SP,rio claro,154
+MG,contagem,426
+MG,pedro leopoldo,40
+MT,lucas do rio verde,24
+SP,ubatuba,76
+RJ,marica,139
+BA,tanque novo,3
+PR,castro,22
+PE,itapissuma,3
+GO,aguas lindas de goias,24
+MG,santa luzia,93
+SP,aparecida,25
+MA,sao luis,353
+PR,colombo,62
+PR,prudentopolis,7
+SP,franco da rocha,109
+SP,caieiras,102
+SP,embu das artes,165
+SP,itaquaquecetuba,172
+ES,cachoeiro de itapemirim,122
+SP,santa cruz das palmeiras,9
+RS,nova alvorada,3
+MG,visconde do rio branco,19
+RJ,cachoeiras de macacu,21
+MG,governador valadares,141
+RS,coxilha,2
+ES,linhares,65
+MG,divinopolis,137
+MG,ouro branco,41
+PR,londrina,306
+MG,alpinopolis,7
+SP,sao jose do rio preto,335
+RJ,queimados,54
+MG,sao pedro dos ferros,4
+SP,varzea paulista,80
+BA,ipiau,8
+RS,cruz alta,33
+PE,catende,7
+SC,rio do sul,35
+MT,tapurah,1
+SP,praia grande,311
+RJ,sao goncalo,409
+AL,maceio,247
+MG,santo antonio do amparo,4
+SP,franca,161
+RS,uruguaiana,48
+MG,araxa,78
+TO,palmas,91
+SP,limeira,190
+SP,guarulhos,1189
+RN,natal,207
+SC,orleans,8
+MG,uba,53
+SP,birigui,79
+MG,guaxupe,37
+GO,catalao,34
+PA,santarem,44
+MT,caceres,25
+RS,carlos barbosa,20
+SP,rio grande da serra,26
+SP,santa gertrudes,12
+SP,santa barbara d'oeste,119
+SP,pindamonhangaba,101
+PB,itaporanga,2
+GO,ipora,15
+MG,santo antonio do monte,15
+SP,vargem grande do sul,14
+MG,uberaba,191
+RJ,sao joao da barra,15
+SP,barueri,433
+SP,descalvado,13
+SP,santo anastacio,17
+SC,lages,84
+RJ,macae,239
+MG,santa vitoria,17
+SP,adamantina,36
+AC,manoel urbano,1
+RJ,teresopolis,120
+SP,avare,64
+MG,manhuacu,65
+MA,esperantinopolis,3
+BA,sao felipe,2
+RJ,barra mansa,123
+SC,palhoca,95
+SP,sao caetano do sul,277
+RS,santo cristo,7
+MG,pouso alegre,131
+SP,diadema,286
+PR,quedas do iguacu,8
+SC,blumenau,188
+PR,ibaiti,11
+SP,cubatao,79
+SP,piracicaba,369
+MG,ribeirao das neves,101
+PR,cornelio procopio,24
+MG,sao sebastiao do maranhao,3
+SP,capivari,35
+RS,pelotas,186
+SP,taboao da serra,296
+MG,eloi mendes,10
+BA,abrantes,2
+SP,mirassol,29
+SP,sao simao,10
+MA,acailandia,7
+SP,mogi mirim,76
+SP,sao vicente,163
+SP,americana,224
+SP,sao carlos,236
+PR,rio negro,15
+BA,lauro de freitas,75
+MA,chapadinha,3
+MG,pimenta,2
+PR,sao jose dos pinhais,133
+SP,araraquara,155
+SP,santo antonio do aracangua,1
+CE,ico,8
+BA,monte santo,1
+CE,milagres,2
+MA,caxias,16
+SP,sorocaba,633
+RJ,duque de caxias,266
+SC,penha,17
+RS,sao lourenco do sul,14
+RS,capao do cipo,3
+MT,sorriso,20
+MT,barra do garcas,25
+SP,maristela,4
+SP,aguas de lindoia,23
+MG,sete lagoas,128
+RS,alvorada,50
+SC,gaspar,30
+MG,dom silverio,4
+RS,sarandi,5
+SP,americo brasiliense,17
+SP,amparo,67
+RS,rio grande,125
+SP,paraguacu paulista,20
+PR,campo largo,37
+PI,campo maior,7
+RN,caico,10
+RS,santo augusto,9
+SC,camboriu,28
+ES,vila velha,334
+MG,perdizes,8
+SE,aracaju,225
+SP,taubate,270
+AL,maravilha,2
+MG,sabinopolis,6
+SC,xanxere,29
+SP,embu-guacu,46
+RJ,volta redonda,232
+MG,araguari,54
+PE,petrolina,65
+PR,irati,22
+MT,nova xavantina,10
+SP,borborema,9
+SP,ituverava,30
+SP,francisco morato,100
+SP,ilha comprida,4
+MG,caete,27
+SP,sao sebastiao,60
+SP,jaguariuna,62
+SP,pereira barreto,19
+PR,jandaia do sul,8
+AL,arapiraca,29
+GO,anapolis,113
+RS,tucunduva,3
+MG,bom despacho,39
+PR,pinhais,69
+ES,mimoso do sul,10
+RS,santa maria,194
+BA,santa maria da vitoria,13
+MG,barbacena,80
+RJ,vila muriqui,7
+SC,joacaba,26
+SP,santa rita d'oeste,3
+RJ,sao joao de meriti,134
+SP,araras,94
+SP,santana de parnaiba,185
+MG,alfenas,43
+PE,jaboatao dos guararapes,135
+PE,gravata,11
+MG,alem paraiba,29
+RS,santo angelo,46
+RS,tres de maio,12
+PA,ananindeua,88
+BA,rio do pires,4
+MA,imperatriz,40
+RJ,vargem alegre,1
+RJ,cabo frio,117
+MG,conselheiro lafaiete,84
+SP,ipero,18
+SP,mairinque,25
+SP,santa fe do sul,35
+RS,canoas,210
+ES,guarapari,67
+PA,maraba,22
+BA,paulo afonso,40
+SP,sao roque,79
+PR,toledo,71
+MG,caetanopolis,8
+RS,sao sebastiao do cai,13
+SP,ribeirao pires,109
+PA,garrafao do norte,3
+SP,votuporanga,63
+BA,irece,13
+SP,miguelopolis,14
+BA,eunapolis,38
+SC,tubarao,60
+PA,morada nova,1
+SC,sao miguel do oeste,40
+RS,casca,7
+PB,campina grande,68
+CE,eusebio,13
+SP,palmeira d'oeste,5
+SP,peruibe,44
+SP,guaira,36
+RJ,saquarema,47
+SP,cajamar,101
+GO,mineiros,26
+SP,cosmopolis,52
+SP,andradina,43
+BA,ibotirama,7
+RS,gravatai,112
+SC,indaial,26
+RS,arvorezinha,4
+GO,aparecida de goiania,110
+MG,rio preto,4
+MG,jequitinhonha,11
+RJ,tres rios,40
+MG,alexandrita,1
+GO,senador canedo,16
+SP,conchal,19
+SP,itu,136
+SC,balneario camboriu,100
+MG,patrocinio,47
+MG,aimores,10
+PR,mandaguari,18
+MG,teofilo otoni,75
+SP,mogi-guacu,93
+ES,barra de sao francisco,10
+ES,sao mateus,48
+PE,limoeiro,7
+SP,paraibuna,10
+PR,missal,7
+PA,xinguara,9
+PR,apucarana,52
+MG,rio acima,8
+MG,jacutinga,18
+PA,santana do araguaia,3
+MS,amambai,6
+SC,jaragua do sul,89
+SP,presidente prudente,161
+ES,cariacica,139
+MG,perdoes,9
+BA,barreiras,52
+CE,solonopole,2
+PR,itaperucu,4
+SP,potirendaba,9
+PR,goioere,11
+MS,corumba,28
+SP,serra negra,14
+RJ,santo antonio de padua,32
+RN,parnamirim,59
+SP,braganca paulista,146
+SC,mafra,28
+BA,camacari,61
+SP,juquitiba,21
+SP,monte alto,34
+RN,macau,5
+SP,igarapava,7
+MG,ipatinga,171
+MG,sao joao del rei,67
+PE,caruaru,64
+MG,carandai,11
+MG,para de minas,37
+MT,nova guarita,1
+GO,buriti alegre,1
+SP,guaratingueta,98
+SP,termas de ibira,1
+BA,candeias,13
+MA,olho d'agua das cunhas,2
+MS,paranaiba,15
+MG,passos,43
+MG,patos de minas,100
+PR,pirai do sul,7
+RS,esteio,41
+MG,sao joao do manteninha,3
+SP,sao joao da boa vista,82
+SC,biguacu,25
+SP,lindoia,9
+MG,lagoa da prata,11
+SC,brusque,60
+RS,capao da canoa,38
+MG,itauna,57
+SP,poa,85
+SP,fernandopolis,53
+SP,itapevi,170
+BA,feira de santana,185
+MT,araputanga,4
+MT,primavera do leste,28
+MG,fonseca,1
+RS,carazinho,24
+MG,campo belo,21
+BA,itambe,3
+PR,pato branco,53
+MG,caxambu,17
+SP,taquarituba,16
+PE,vitoria de santo antao,15
+MG,moeda,1
+MG,paracatu,63
+PR,colonia vitoria,5
+MG,formiga,32
+RS,padre gonzales,1
+CE,catarina,3
+RS,restinga seca,3
+PR,araucaria,54
+RN,extremoz,2
+AP,santana,9
+SP,artur nogueira,43
+MG,sarzedo,18
+MG,santa rita do sapucai,35
+MG,sao joao nepomuceno,15
+ES,arace,4
+MG,virginopolis,8
+SP,gaviao peixoto,2
+GO,sao simao,4
+MG,muzambinho,9
+SC,urussanga,10
+RS,alegrete,36
+MG,vicosa,89
+MG,manhumirim,16
+SP,hortolandia,145
+BA,alagoinhas,40
+SC,laguna,14
+SP,cruzeiro,56
+MG,pocos de caldas,122
+MG,joao monlevade,51
+MT,matupa,7
+SP,jandira,85
+GO,sao miguel do araguaia,5
+MG,santana do paraiso,16
+MG,monte santo de minas,9
+MG,monte alegre de minas,4
+SC,garopaba,23
+MG,ponto do marambaia,1
+SC,correia pinto,11
+GO,luziania,33
+RS,santa cruz do sul,62
+MG,espera feliz,19
+PR,tibagi,4
+SP,assis,84
+RJ,quissama,13
+MT,nortelandia,1
+RS,farroupilha,28
+BA,barra do mendes,3
+GO,valparaiso de goias,37
+BA,juazeiro,44
+MG,virgem da lapa,3
+MG,muriae,64
+SP,itapetininga,78
+RJ,paraiba do sul,18
+SC,sao jose,169
+MG,ipaba,8
+PR,campina grande do sul,10
+RJ,belford roxo,111
+CE,milha,2
+PR,rolandia,27
+MG,nova lima,98
+SP,lucelia,12
+SP,monte azul paulista,19
+SP,batatais,28
+RS,protasio alves,2
+GO,novo gama,16
+RS,sao gabriel,24
+BA,andorinha,5
+GO,caldas novas,36
+MG,tocantins,6
+MG,alto rio doce,4
+PR,jacarezinho,17
+RS,viamao,73
+SC,concordia,50
+SP,pirapozinho,14
+PR,mangueirinha,9
+ES,piuma,17
+SC,ipira,2
+SP,pinhalzinho,12
+CE,sao goncalo do amarante,5
+CE,ipu,4
+PB,sao bento,3
+BA,brumado,22
+BA,barra do tarrachil,3
+BA,maragogipe,2
+MS,chapadao do sul,14
+BA,teolandia,4
+SP,aracatuba,141
+RO,sao francisco do guapore,2
+SP,olimpia,38
+MT,rondonopolis,65
+SP,jau,74
+SP,porto feliz,22
+RS,montenegro,32
+PA,paragominas,19
+MG,gameleiras,3
+SP,palmital,18
+MG,joao pinheiro,16
+SP,dracena,28
+SC,anita garibaldi,5
+RS,aguas claras,1
+SP,catanduva,75
+SC,sao lourenco do oeste,11
+SP,botelho,1
+SC,itaiopolis,8
+PR,jaguapita,1
+RS,garibaldi,10
+MG,camanducaia,9
+SP,guaracai,5
+SP,vinhedo,95
+MS,rio negro,1
+MG,sao sebastiao do paraiso,36
+BA,paripiranga,2
+PA,jacunda,6
+BA,itabuna,62
+SP,mogi-mirim,2
+GO,parauna,4
+SP,pedreira,36
+RS,cachoeira do sul,32
+MG,matias barbosa,13
+SP,barretos,73
+MG,santana do manhuacu,3
+MG,lavras,83
+SP,mairipora,75
+SP,colina,9
+PE,serra talhada,10
+GO,jaragua,7
+SP,santa isabel,30
+SP,tres fronteiras,5
+MG,salinas,22
+MG,campanha,7
+CE,forquilha,4
+SP,viradouro,18
+TO,aparecida do rio negro,1
+MG,cristais,3
+SP,jumirim,3
+SP,bastos,17
+MA,alto parnaiba,5
+SP,piquete,9
+SP,luis antonio,7
+MG,coronel fabriciano,41
+SP,salto,95
+SP,redencao da serra,1
+BA,pojuca,13
+SP,pongai,4
+MG,sao joao do oriente,2
+PI,sao joao do piaui,6
+SP,campo limpo paulista,48
+SC,campos novos,14
+SC,balneario picarras,10
+RJ,rio das flores,6
+RJ,aperibe,13
+PE,camaragibe,35
+SP,cravinhos,24
+ES,guacui,16
+RJ,conceicao de macabu,13
+SP,oriente,3
+MG,ituiutaba,56
+SP,presidente venceslau,26
+RJ,barra do pirai,54
+RS,lajeado,50
+MG,sabara,42
+SP,cunha,15
+RS,taquara,21
+RJ,araruama,77
+SP,ibirarema,5
+RS,nova bassano,4
+MG,itapeva,5
+CE,bela cruz,4
+ES,colatina,65
+TO,sitio novo do tocantins,2
+RS,tramandai,25
+SP,itapecerica da serra,98
+RS,espumoso,7
+SP,itajobi,10
+MG,cambui,22
+SP,tupa,53
+SC,itapoa,9
+RS,capao da porteira,2
+SP,socorro,19
+ES,castelo,18
+BA,barra do choca,3
+SP,itapira,55
+CE,santana do acarau,4
+BA,teixeira de freitas,29
+MG,sao felix de minas,1
+SP,sao lourenco da serra,12
+RS,candelaria,4
+ES,santa maria de jetiba,15
+ES,brejetuba,1
+MG,sao romao,5
+RS,feliz,14
+SP,nuporanga,3
+PR,paranacity,3
+SE,cedro de sao joao,3
+MG,nacip raydan,1
+MG,lagoa santa,59
+MA,paco do lumiar,7
+PR,uniao da vitoria,29
+MG,campos altos,5
+SP,barrinha,20
+MA,santa ines,12
+RR,boa vista,45
+SC,cunha pora,5
+SP,luiziania,3
+BA,riacho de santana,4
+SP,jarinu,19
+GO,ceres,7
+PR,medianeira,23
+MG,tres marias,13
+RJ,itaocara,16
+MT,colider,8
+SC,timbo,20
+CE,reriutaba,3
+MT,varzea grande,41
+MG,itabirito,32
+BA,guanambi,38
+RS,portao,10
+MG,unai,54
+SP,bom jesus dos perdoes,18
+SP,tejupa,3
+RS,cachoeirinha,72
+SP,guararapes,19
+PR,foz do iguacu,87
+GO,itaguari,1
+MT,sinop,46
+SC,abelardo luz,6
+SP,itatiba,97
+RO,pimenta bueno,8
+AC,rio branco,70
+MG,cachoeira da prata,2
+MG,monte carmelo,24
+SP,santa albertina,7
+MG,congonhas,30
+RS,marau,22
+SC,nova trento,6
+RJ,mendes,12
+RN,areia branca,3
+SP,lorena,83
+MG,abre campo,6
+RS,flores da cunha,12
+SP,santa adelia,15
+PR,general carneiro,5
+SP,jales,30
+SP,ibira,7
+RS,macambara,2
+SP,conchas,10
+SP,holambra ii,5
+PE,pesqueira,9
+BA,senhor do bonfim,19
+ES,sao joao de petropolis,1
+RJ,ipiabas,4
+PR,telemaco borba,35
+SP,sertaozinho,62
+PI,guadalupe,4
+MG,ibirite,50
+BA,joao dourado,1
+ES,sooretama,5
+RS,jacutinga,1
+MG,riacho dos machados,3
+RJ,cordeiro,24
+SP,quata,13
+SP,mombuca,3
+PI,parnaiba,23
+SC,itapema,44
+AL,maragogi,5
+GO,silvania,7
+MG,mantena,11
+SP,tabapua,12
+SP,piraju,19
+SC,cocal do sul,4
+SP,taiuva,5
+PR,laranjeiras do sul,20
+MG,mariana,33
+ES,marataizes,16
+RO,presidente medici,2
+SP,engenheiro coelho,13
+PI,francisco santos,1
+RS,estancia velha,20
+PA,castanhal,22
+SC,ararangua,18
+SP,ferraz de vasconcelos,111
+SP,magda,2
+SP,santa rosa de viterbo,14
+SP,itanhaem,80
+PA,parauapebas,27
+MA,cururupu,3
+MG,aguas vermelhas,3
+PR,matinhos,27
+MG,pirapora,42
+MS,coxim,11
+RJ,papucaia,10
+MT,alto taquari,3
+CE,maracanau,35
+PB,catole do rocha,6
+BA,itapetinga,18
+CE,barbalha,6
+RS,nova araca,1
+SP,santo antonio do jardim,5
+PR,sarandi,19
+MG,periquito,2
+RN,acu,3
+RS,ibiruba,21
+MG,monte belo,5
+MG,capelinha,20
+RS,bento goncalves,56
+BA,euclides da cunha,5
+PI,altos,5
+GO,anicuns,8
+PB,guarabira,10
+MG,sao joao da mata,2
+PB,patos,16
+MS,dourados,64
+PI,floriano,18
+BA,varzedo,1
+RS,eldorado do sul,15
+MG,serra dos aimores,5
+RJ,valenca,28
+BA,anguera,1
+SP,bebedouro,51
+DF,sobradinho,1
+MA,balsas,17
+MG,pains,3
+SP,brotas,12
+BA,dias d'avila,24
+CE,redencao,5
+CE,caucaia,35
+PR,curiuva,4
+MT,jauru,5
+BA,sao miguel das matas,1
+RS,vila flores,3
+SP,lencois paulista,45
+PR,palmas,19
+SP,santa barbara d oeste,5
+SC,aguas mornas,1
+RS,terra de areia,5
+MT,paranaita,4
+PR,centenario do sul,4
+RJ,barra de sao joao,13
+MG,paraisopolis,15
+AL,penedo,8
+PR,realeza,6
+MS,caarapo,4
+SC,sao bento do sul,45
+CE,carius,3
+AL,palmeira dos indios,8
+GO,iaciara,4
+MG,tiros,3
+SC,anchieta,3
+RJ,itaperuna,47
+SC,turvo,4
+SC,videira,47
+MG,piedade de caratinga,7
+MG,barroso,11
+PE,iati,3
+SC,navegantes,31
+MG,guanhaes,18
+RJ,paracambi,35
+CE,maranguape,3
+MG,conselheiro pena,15
+SP,sao jose do rio pardo,44
+SP,garca,28
+RS,sao jose do ouro,5
+GO,morrinhos,14
+SP,leme,50
+SC,bombinhas,15
+MT,pontes e lacerda,9
+PE,nazare da mata,1
+PE,toritama,5
+RN,japi,1
+PE,paulista,41
+PR,cambe,27
+PR,fenix,1
+BA,sitio do quinto,2
+SC,rodeio,7
+RJ,mangaratiba,13
+PR,paranagua,60
+MG,abaete,12
+SP,santa branca,9
+CE,icapui,5
+PE,palmares,9
+MG,pedrinopolis,3
+TO,formoso do araguaia,4
+MG,cruzilia,4
+SC,santa terezinha,1
+MG,itanhandu,14
+SP,ourinhos,80
+MG,nova ponte,9
+SP,sao joaquim da barra,34
+MG,santos dumont,22
+MG,martins soares,6
+BA,ilheus,72
+RJ,japeri,34
+PA,breu branco,3
+ES,rio bananal,4
+SP,valentim gentil,3
+SE,nossa senhora da gloria,2
+SP,charqueada,10
+MG,divino,14
+SP,orlandia,29
+MT,mirassol d'oeste,14
+PR,cidade gaucha,5
+SP,cesario lange,13
+RS,bom retiro do sul,3
+MG,malacacheta,7
+SP,quadra,3
+SP,penapolis,37
+MT,juina,17
+BA,santa cruz cabralia,5
+SP,taquaritinga,33
+ES,anchieta,14
+SC,imbuia,4
+PE,olinda,93
+MA,maracacume,4
+PR,francisco beltrao,52
+SP,casa branca,13
+RS,osorio,35
+GO,alvorada do norte,3
+PR,umuarama,41
+ES,baixo guandu,8
+SP,rancharia,22
+PA,moju,4
+MG,itamonte,10
+PR,colonia castrolanda,3
+MA,fortuna,3
+PE,ipojuca,17
+MG,capetinga,2
+PR,amapora,2
+MG,curvelo,44
+SE,estancia,9
+SP,nova odessa,38
+ES,ibatiba,9
+RN,vila flor,1
+SC,benedito novo,6
+PA,tailandia,4
+MG,bandeira,3
+PR,primeiro de maio,7
+RS,vitoria das missoes,1
+MG,santa barbara,26
+SC,cerro negro,1
+SP,pradopolis,10
+GO,cidade ocidental,8
+DF,taguatinga,4
+MG,chale,2
+PI,ilha grande,1
+SP,presidente epitacio,23
+RS,bage,65
+RS,maximiliano de almeida,3
+BA,milagres,2
+RJ,nilopolis,107
+SC,xaxim,10
+RS,sao jose do hortencio,2
+MG,tres pontas,20
+SC,capinzal,10
+RJ,resende,117
+SP,porto ferreira,28
+RS,tapes,6
+SP,lins,55
+SP,candido mota,16
+GO,alexania,5
+RJ,pirai,16
+BA,nazare,4
+MG,resende costa,3
+SE,lagarto,11
+SP,mongagua,42
+SC,taio,15
+MG,ponte nova,41
+SP,quintana,4
+RS,itaqui,9
+CE,lagoa do mato,1
+RJ,angra dos reis,85
+PB,mamanguape,6
+ES,mantenopolis,4
+SP,sao francisco,2
+MG,goiana,4
+SP,buri,10
+GO,porangatu,13
+BA,luis eduardo magalhaes,36
+MS,jardim,3
+PE,tuparetama,3
+ES,vila valerio,8
+SP,cajobi,8
+RN,vera cruz,1
+GO,rio verde,66
+RS,nova petropolis,8
+MG,diamantina,27
+ES,aracruz,41
+MG,tombos,5
+RN,pedro velho,1
+RS,roque gonzales,5
+SC,fraiburgo,15
+SC,zortea,2
+RJ,engenheiro passos,2
+MG,pitangui,22
+BA,sao domingos,3
+PR,jundiai do sul,3
+MG,ouro preto,57
+GO,goianapolis,4
+MG,coluna,3
+SP,candido rodrigues,4
+AP,macapa,54
+SP,fernao,1
+SP,jardinopolis,13
+PR,marilandia do sul,1
+RJ,cantagalo,17
+PI,isaias coelho,1
+RS,dona francisca,2
+MG,jaiba,6
+CE,quixeramobim,6
+GO,edeia,4
+SC,trombudo central,5
+BA,apuarema,1
+RS,nova hartz,3
+ES,ponto belo,1
+SP,registro,50
+PR,santa cruz de monte castelo,4
+GO,chapadao do ceu,8
+MG,frutal,26
+PR,siqueira campos,9
+SP,divinolandia,7
+MS,sao gabriel do oeste,7
+PE,bom conselho,7
+PR,jaguariaiva,19
+MG,medina,6
+MG,lambari,8
+PE,lajedo,7
+CE,crateus,9
+RS,acegua,2
+RN,pau dos ferros,9
+SP,tambau,20
+PE,rio formoso,2
+CE,pacajus,6
+MG,campina verde,10
+CE,paracuru,5
+SP,itapeva,53
+SP,pariquera-acu,15
+RJ,bom jesus do itabapoana,21
+PR,nova santa rosa,4
+MG,jordania,5
+MG,congonhal,4
+MG,belo vale,3
+CE,croata,1
+PB,esperanca,6
+SP,fernando prestes,6
+PR,cafelandia,13
+MG,monte formoso,2
+SP,ouroeste,11
+GO,vicentinopolis,2
+MG,sao jose da lapa,8
+RO,ariquemes,13
+MG,rio paranaiba,9
+MG,cristalia,3
+BA,catu de abrantes,2
+CE,itapipoca,11
+RS,serafina correa,9
+MA,bacabal,11
+MG,caratinga,62
+MT,barra do bugres,4
+PR,paicandu,10
+CE,cruz,7
+RS,campo bom,36
+RS,sao luiz gonzaga,15
+SC,praia grande,4
+SP,bariri,15
+SP,boa esperanca do sul,11
+ES,itaipava,4
+SP,barra bonita,29
+AL,anadia,2
+BA,mutuipe,4
+SC,quilombo,4
+SP,salesopolis,10
+SP,paulo de faria,5
+MG,novo cruzeiro,9
+MG,aguas formosas,5
+RS,camaqua,13
+SC,papanduva,8
+RJ,sao jose do vale do rio preto,12
+RJ,seropedica,33
+PA,quatro bocas,5
+SP,castilho,11
+MG,mar de espanha,9
+RO,nova mamore,2
+PR,nova londrina,9
+SP,presidente bernardes,6
+PA,igarape-acu,1
+RS,ronda alta,6
+MT,agua boa,18
+MG,aracitaba,2
+MA,coelho neto,4
+RS,arroio do sal,8
+RS,ibiaca,2
+PR,chopinzinho,4
+MG,sao goncalo do sapucai,10
+MG,sao goncalo do rio das pedras,1
+MA,cantanhede,1
+PR,santo antonio da platina,12
+SC,braco do norte,20
+PR,campo mourao,56
+BA,caravelas,3
+PE,surubim,5
+GO,cacu,8
+RJ,japuiba,5
+ES,jeronimo monteiro,2
+MG,claudio,22
+SP,macedonia,4
+MS,nova alvorada do sul,3
+SC,palmitos,5
+RS,palmeira das missoes,16
+MG,guaranesia,9
+TO,parana,2
+PA,rio maria,3
+PR,japira,3
+PR,santa helena,9
+MG,felicio dos santos,1
+BA,prado,5
+MG,nova serrana,51
+MT,vera,3
+MG,dores de campos,8
+MG,cassia,6
+PE,escada,10
+SP,barra do turvo,3
+MG,cabeceira grande,3
+RS,torres,17
+SP,pirajui,12
+SP,tapiratiba,12
+MG,andradas,12
+SC,pinhalzinho,9
+SP,caraguatatuba,89
+RJ,cardoso moreira,6
+MG,jesuania,5
+MT,ribeiraozinho,2
+SP,sao joao de iracema,3
+SC,treze tilias,11
+TO,conceicao do tocantins,3
+PE,araripina,12
+MS,mundo novo,3
+RS,lagoa dos tres cantos,1
+PR,nova prata do iguacu,6
+MG,santo antonio do itambe,3
+ES,boa esperanca,7
+RS,tres cachoeiras,7
+PE,cha grande,1
+RS,xangri-la,8
+TO,gurupi,24
+RS,butia,6
+CE,nova russas,7
+BA,pedrao,1
+MG,sao lourenco,34
+PE,ribeirao,4
+PR,candido de abreu,4
+BA,jequie,36
+RS,dois irmaos,18
+RJ,rio bonito,28
+SC,sideropolis,4
+CE,ibiapina,3
+SP,itai,10
+GO,pirenopolis,4
+SP,pederneiras,21
+PR,reboucas,6
+ES,domingos martins,9
+SP,ipua,4
+GO,uruacu,17
+PR,rio azul,5
+GO,palmeiras de goias,3
+GO,alto paraiso de goias,9
+SP,pontal,13
+BA,quixabeira,3
+MG,sao francisco,12
+MG,santana da vargem,4
+PR,almirante tamandare,35
+RO,cacaulandia,1
+PR,tomazina,3
+MG,cataguases,33
+SP,sao bento do sapucai,7
+BA,ubaitaba,4
+SP,motuca,3
+GO,castelandia,5
+RJ,travessao,4
+BA,itaberaba,10
+BA,valente,9
+PR,sapopema,2
+GO,hidrolina,2
+PE,ilha de itamaraca,4
+MG,itabira,79
+PE,petrolandia,10
+RS,augusto pestana,2
+PE,goiana,9
+AL,luziapolis,1
+CE,caririacu,2
+SC,ituporanga,15
+PE,moreno,5
+PA,canaa dos carajas,9
+ES,araguaia,1
+SP,agudos,16
+SP,neves paulista,3
+RS,irai,2
+PR,marechal candido rondon,31
+SP,icem,9
+BA,santo antonio de jesus,30
+SC,araquari,11
+SP,jeriquara,1
+PE,barreiros,6
+CE,cascavel,5
+BA,itarantim,3
+BA,santo estevao,5
+PR,indianopolis,4
+MS,ivinhema,3
+MG,luminarias,3
+SP,pirangi,8
+SP,ilhabela,46
+RS,sao sepe,6
+SP,dois corregos,11
+SP,serrana,13
+BA,gongogi,1
+SP,espirito santo do pinhal,18
+RO,jaru,6
+PR,bandeirantes,13
+RS,gramado,30
+RS,triunfo,11
+MG,arcos,25
+RJ,itaguai,48
+SP,sao luis do paraitinga,3
+MG,vespasiano,45
+BA,paramirim,5
+SC,ponte serrada,3
+PR,senges,5
+MG,santa cruz de minas,5
+SP,nhandeara,8
+SP,itaporanga,12
+MG,timoteo,54
+SC,lauro muller,8
+MA,icatu,1
+MG,leopoldina,17
+MG,andrequice,1
+RN,alto do rodrigues,8
+PA,ulianopolis,1
+RS,osvaldo kroeff,1
+PR,dois vizinhos,28
+GO,nova veneza,4
+MG,campo do meio,4
+RJ,casimiro de abreu,20
+BA,simoes filho,21
+BA,itubera,3
+RN,jardim do serido,3
+SP,taruma,9
+GO,formosa,34
+RJ,passa tres,2
+PR,assis chateaubriand,12
+CE,juazeiro do norte,34
+ES,alfredo chaves,7
+PR,ortigueira,8
+MA,presidente dutra,12
+MG,sao joaquim de bicas,8
+SP,laranjal paulista,17
+PR,guarapuava,65
+SC,vargem bonita,5
+SP,promissao,32
+SP,auriflama,10
+MG,buritizeiro,9
+PR,maua da serra,2
+SC,sao francisco do sul,17
+RS,parai,3
+PR,palotina,10
+SC,maravilha,10
+RS,cacequi,4
+SP,itarare,29
+PE,vicencia,2
+SE,sao cristovao,7
+PR,faxinal,9
+PA,nova esperanca do piria,1
+RS,charqueadas,17
+CE,limoeiro do norte,12
+SP,pitangueiras,18
+SP,primavera,9
+MG,amparo da serra,1
+SP,duartina,10
+SC,canoinhas,27
+MG,azurita,3
+MA,ze doca,5
+MG,frei inocencio,5
+BA,ruy barbosa,7
+PI,corrente,4
+PE,belem do sao francisco,2
+CE,aracati,22
+SP,estrela d'oeste,1
+MG,cristina,8
+BA,condeuba,1
+SP,bonfim paulista,18
+MG,sao joao do paraiso,4
+MG,eugenopolis,5
+PI,sao lourenco do piaui,1
+SP,tiete,37
+BA,porto seguro,41
+RJ,areal,7
+MG,prata,10
+PR,ribeirao claro,5
+GO,aruana,2
+MG,itapagipe,5
+PA,capanema,5
+MG,tupaciguara,13
+MG,brazopolis,6
+MT,nova lacerda,1
+RJ,armacao dos buzios,29
+RO,vilhena,18
+RJ,arraial do cabo,29
+BA,caetite,10
+PE,sao lourenco da mata,12
+CE,carnaubal,2
+GO,serranopolis,3
+MG,monte siao,20
+MG,pratapolis,1
+MG,santa juliana,9
+SP,teodoro sampaio,12
+RN,messias targino,1
+PR,loanda,13
+MG,guarani,7
+MG,almenara,14
+RS,santa rosa,33
+RJ,guapimirim,23
+CE,crato,19
+SP,cachoeira paulista,25
+MG,januaria,22
+GO,itaberai,6
+MG,varzea da palma,11
+PB,uirauna,1
+ES,pedro canario,5
+RS,horizontina,7
+SP,tarabai,5
+MG,raposos,11
+MG,piumhii,28
+PE,brejo da madre de deus,4
+MG,santo hipolito,1
+PR,alexandra,1
+BA,bom jesus da lapa,9
+RS,palmitinho,5
+RJ,carmo,13
+MG,taiobeiras,13
+SP,morro agudo,10
+GO,portelandia,2
+MG,fervedouro,8
+BA,jucurucu,2
+CE,quixada,12
+MG,sapucaia,1
+BA,abaira,2
+PR,quitandinha,2
+AL,tanque d'arca,2
+PB,bayeux,7
+SC,sombrio,11
+BA,arraial d ajuda,1
+MA,lago verde,1
+RN,macaiba,5
+PR,inacio martins,5
+SP,mococa,34
+MG,nova era,15
+GO,padre bernardo,4
+BA,varzea nova,1
+CE,itaitinga,4
+SP,pilar do sul,12
+MG,durande,2
+SP,guarei,5
+SP,bananal,6
+PR,arapongas,35
+GO,trindade,24
+PE,nossa senhora do o,2
+RS,cangucu,15
+BA,itamaraju,12
+BA,aramari,2
+SP,vera cruz,10
+MT,campo verde,10
+RS,tapejara,9
+PR,carlopolis,6
+SC,macieira,1
+ES,afonso claudio,11
+PR,piraquara,14
+MA,sucupira do norte,2
+MG,sao goncalo do abaete,2
+MG,perpetuo socorro,2
+CE,sobral,36
+MA,sao bento,2
+SP,herculandia,3
+PB,picui,2
+PE,sanharo,3
+RS,pinheiro machado,5
+PR,tamarana,2
+ES,montanha,10
+GO,piracanjuba,10
+SC,belmonte,1
+BA,camamu,9
+MG,resplendor,10
+PA,marituba,15
+BA,mata de sao joao,12
+MA,timon,15
+PE,taquaritinga do norte,7
+SC,santo amaro da imperatriz,12
+RS,sao borja,18
+MG,boa esperanca,11
+ES,rio novo do sul,6
+RS,venancio aires,26
+PR,itapejara d'oeste,6
+SP,bofete,6
+RJ,goitacazes,11
+MG,romaria,2
+RS,guapore,18
+RS,guarani das missoes,2
+BA,correntina,2
+SE,tomar do geru,2
+RS,encruzilhada do sul,8
+MS,sidrolandia,11
+MG,delfinopolis,3
+PR,ivaipora,7
+TO,araguaina,41
+RS,sertao,3
+RJ,miracema,19
+AL,pau d'arco,1
+BA,ipira,8
+RO,ji-parana,17
+RS,tres passos,11
+PA,floresta do araguaia,1
+MG,belo oriente,5
+PB,agua branca,2
+SC,guabiruba,5
+GO,barro alto,1
+PA,santa maria do para,2
+SP,santa maria da serra,2
+AL,teotonio vilela,8
+MS,ponta pora,18
+MG,ibiracatu,1
+CE,altaneira,2
+ES,dores do rio preto,4
+MG,igarape,11
+BA,sobradinho,5
+RS,getulio vargas,8
+SP,taguai,10
+SC,porto uniao,14
+SP,nova europa,8
+CE,morrinhos,4
+MA,barreirinhas,4
+MG,bom sucesso,4
+RS,barros cassal,3
+GO,bela vista de goias,7
+RS,imigrante,3
+MG,vargem grande do rio pardo,1
+SP,dourado,8
+SP,estiva gerbi,7
+MG,rio casca,5
+SP,iacanga,6
+BA,jeremoabo,6
+PR,bocaiuva do sul,2
+PB,jerico,1
+RJ,california da barra,6
+RS,vacaria,23
+RJ,boa ventura,1
+GO,campo alegre de goias,2
+CE,senador pompeu,4
+BA,uibai,4
+PE,camutanga,3
+RS,arroio dos ratos,9
+GO,acreuna,7
+MG,rio manso,5
+SP,apiai,6
+GO,inhumas,16
+MG,carneirinho,3
+SP,urupes,10
+CE,taua,10
+MA,alto alegre do pindare,1
+BA,santo amaro,10
+MG,divino das laranjeiras,1
+RJ,bom jardim,14
+SP,cananeia,8
+PB,sume,3
+MG,jacinto,2
+BA,sao sebastiao do passe,5
+SC,guaramirim,13
+GO,neropolis,7
+MA,pastos bons,2
+CE,oros,2
+SP,catigua,6
+PR,balsa nova,1
+ES,apiaca,6
+SC,dona emma,1
+MG,palma,4
+PR,cambara,10
+GO,cachoeira alta,6
+PA,tucurui,17
+SP,alvares machado,8
+RS,encantado,11
+RS,palmares do sul,5
+SC,sao joaquim,9
+RJ,trajano de moraes,8
+BA,piritiba,6
+SP,piratininga,9
+MG,paraguacu,13
+RN,currais novos,8
+MA,campestre do maranhao,2
+MG,barao de cocais,18
+SC,santa cruz do timbo,1
+BA,buerarema,4
+CE,tabuleiro do norte,1
+RS,charrua,2
+ES,muqui,4
+PR,renascenca,4
+MG,teixeiras,7
+RJ,natividade,15
+RN,sao goncalo do amarante,7
+SP,piedade,23
+MG,rio novo,4
+RS,veranopolis,18
+RS,lagoa vermelha,14
+PI,simplicio mendes,1
+MG,icarai de minas,2
+MG,dores do indaia,7
+SC,rio do campo,4
+PE,santo antonio das queimadas,1
+PR,palmeirinha,2
+RS,porto xavier,5
+MG,aracuai,9
+PR,sao sebastiao da amoreira,1
+MG,piranguinho,9
+SC,cacador,40
+SC,arroio trinta,1
+GO,nazario,2
+RS,toropi,3
+GO,quirinopolis,14
+BA,itirucu,3
+SP,torrinha,6
+PE,igarassu,13
+SP,agisse,1
+SC,guaruja do sul,4
+ES,santa teresa,10
+RS,sao martinho,1
+PR,astorga,7
+TO,almas,1
+MG,botelhos,8
+CE,horizonte,5
+RS,nova prata,16
+SC,curitibanos,21
+PR,xambre,2
+BA,valenca,35
+RS,cacapava do sul,5
+PR,ceu azul,7
+SP,novo horizonte,17
+RJ,italva,14
+RS,guaiba,31
+PR,colorado,6
+SC,icara,21
+RS,minas do leao,1
+SP,caconde,10
+GO,goianesia,18
+SP,paranapanema,11
+RS,selbach,1
+PE,santa cruz do capibaribe,13
+PR,lobato,3
+MG,madre de deus de minas,3
+SC,pouso redondo,3
+SP,buritizal,2
+RJ,iguaba grande,19
+PR,nova fatima,4
+SC,botuvera,2
+TO,miranorte,2
+GO,fazenda nova,4
+BA,vera cruz,7
+MG,conceicao da ibitipoca,1
+GO,goiatuba,10
+BA,teodoro sampaio,1
+RJ,paraty,19
+SP,sales oliveira,6
+SP,rubiacea,2
+SP,ibitinga,22
+PE,condado,4
+BA,candido sales,3
+RN,galinhos,1
+PR,fazenda rio grande,29
+SP,embu,11
+SP,tupi paulista,6
+MT,comodoro,7
+SP,parisi,1
+BA,brotas de macaubas,1
+ES,ecoporanga,8
+PI,sao raimundo nonato,7
+MG,nanuque,25
+MG,sacramento,13
+MG,lagoa grande,4
+MT,alta floresta,12
+RN,jucurutu,4
+GO,rianapolis,4
+SC,tres barras,5
+BA,cansancao,7
+MG,alto jequitiba,4
+MT,sao jose dos quatro marcos,2
+PR,itambaraca,2
+SP,paraiso,5
+SC,garuva,5
+MG,brumadinho,26
+PR,lapa,15
+RS,teutonia,14
+SP,brauna,5
+RS,santa vitoria do palmar,12
+PA,sao miguel do guama,5
+PI,itaueira,2
+PR,santa isabel do ivai,3
+SP,ilha solteira,24
+SP,aracoiaba da serra,11
+SP,sao jose do barreiro,3
+SC,ascurra,4
+PI,sao miguel do tapuio,3
+MG,orizania,1
+SP,pirapora do bom jesus,16
+PE,santa filomena,1
+PR,cianorte,39
+RN,portalegre,2
+MG,pedra do indaia,1
+SC,sao carlos,5
+SE,itabaiana,16
+PR,sao jorge d'oeste,1
+BA,monte gordo,2
+GO,ipiranga de goias,1
+SC,faxinal dos guedes,11
+SP,salto de pirapora,13
+PE,panelas,2
+MG,itinga,3
+PR,espigao alto do iguacu,2
+MG,carmo do cajuru,10
+SC,sao martinho,2
+RN,martins,2
+PR,rio branco do sul,6
+ES,sao gabriel da palha,14
+SP,guaraci,2
+CE,sucesso,3
+BA,medeiros neto,7
+SP,juquia,10
+MG,francisco badaro,3
+PB,areial,1
+PE,cortes,2
+RS,salto do jacui,4
+MG,baependi,8
+MG,ipanema,7
+PE,venturosa,2
+PA,redencao,13
+CE,pacatuba,5
+SP,clementina,4
+MG,presidente olegario,6
+RJ,sao francisco de itabapoana,15
+GO,planaltina,10
+RJ,sao fidelis,23
+BA,itape,1
+MG,itueta,2
+BA,planaltino,1
+RS,pontao,1
+SP,santa rita do passa quatro,18
+PR,mambore,8
+GO,orizona,6
+GO,matrincha,2
+PI,paulistana,3
+MT,nova bandeirantes,4
+PR,alto sao joao,1
+SP,cajati,16
+MS,bodoquena,2
+MG,bambui,18
+PA,igarape-miri,1
+MS,alcinopolis,6
+PB,pedra branca,1
+MT,chapada dos guimaraes,4
+RS,estacao,5
+TO,guarai,4
+GO,arenopolis,1
+BA,tapiramuta,2
+AM,coari,1
+GO,cristalina,8
+RS,sapucaia do sul,40
+SC,ibirama,13
+MG,divinolandia de minas,5
+MG,janauba,17
+MA,porto franco,2
+BA,maracas,5
+PR,cruzeiro do oeste,7
+MG,passa quatro,10
+RS,arroio do meio,10
+SC,balneario arroio do silva,4
+CE,quixelo,2
+SP,osvaldo cruz,16
+MG,araujos,6
+SC,nossa senhora de caravaggio,2
+MS,miranda,4
+SP,populina,1
+BA,nova vicosa,1
+PR,diamante do norte,5
+SE,sao miguel do aleixo,1
+BA,morro do chapeu,7
+RS,ibarama,1
+SP,jacupiranga,5
+SE,santo amaro das brotas,1
+BA,ubaira,6
+PA,curuca,3
+RJ,tocos,2
+ES,itapemirim,4
+MG,medeiros,2
+PE,gameleira,4
+MT,castanheira,3
+RS,ipe,2
+ES,viana,21
+BA,coaraci,4
+MG,merces,4
+BA,uaua,4
+MS,rio brilhante,11
+BA,mucuge,1
+RO,cacoal,13
+MT,guaranta do norte,5
+MG,raul soares,12
+MG,florestal,3
+MG,cocais,1
+CE,camocim,8
+PR,kalore,2
+SC,imbituba,34
+SP,bilac,9
+MA,matoes,1
+RS,chapada,4
+PE,lagoa dos gatos,3
+RJ,itatiaia,18
+PB,pedras de fogo,2
+SE,japoata,1
+PR,sao mateus do sul,15
+MG,buritis,14
+PR,santa fe,5
+PB,mari,3
+MG,careacu,2
+MG,rubelita,1
+SP,mirandopolis,13
+MG,pocrane,3
+MT,campo novo do parecis,16
+PR,mandaguacu,5
+RS,ivoti,13
+MA,sao bernardo,3
+GO,mozarlandia,7
+MG,papagaios,4
+BA,conceicao do coite,9
+PR,mandirituba,2
+SP,colombia,5
+SP,brodowski,10
+GO,crixas,8
+PR,ubirata,7
+BA,serra dourada,2
+GO,rubiataba,7
+MT,campos de julio,6
+GO,paranaiguara,3
+SP,sao miguel arcanjo,13
+SP,sabino,3
+MG,santa rita do itueto,1
+SP,guara,8
+MG,sao gotardo,20
+PE,garanhuns,31
+MG,itaobim,6
+SE,barra dos coqueiros,3
+ES,agua doce do norte,4
+RS,jacuizinho,1
+PA,medicilandia,1
+MG,liberdade,3
+SP,silveiras,3
+SE,umbauba,3
+SP,sao sebastiao da grama,4
+MG,maravilhas,4
+BA,queimadas,4
+CE,russas,9
+ES,conceicao do castelo,5
+PB,cajazeiras,12
+SP,nazare paulista,7
+PR,nossa senhora das gracas,2
+RS,capitao,1
+PE,carpina,10
+PE,ibimirim,3
+CE,apuiares,2
+SP,lavinia,4
+PR,janiopolis,3
+SP,sao pedro do turvo,2
+CE,jardim,2
+SP,itapolis,28
+MG,sao pedro da uniao,3
+SP,analandia,4
+RS,pedras altas,1
+PR,iguaracu,2
+BA,macaubas,9
+RS,cristal,3
+CE,marco,3
+BA,teofilandia,3
+MG,perdigao,7
+SC,paraiso,1
+PR,mallet,6
+RO,urupa,3
+PI,marcos parente,1
+RJ,corrego do ouro,1
+RS,girua,10
+MG,carrancas,3
+GO,santa fe de goias,4
+PR,lunardelli,2
+SC,coronel freitas,1
+PE,feira nova,5
+SP,palestina,10
+GO,niquelandia,14
+BA,una,5
+ES,venda nova do imigrante,15
+PE,aracoiaba,2
+SP,holambra,24
+GO,bom jesus,8
+PR,pien,4
+RS,tres coroas,6
+SP,aracariguama,10
+PR,japura,5
+GO,santa helena de goias,9
+RJ,tangua,6
+PR,santa izabel do oeste,2
+AL,marechal deodoro,1
+AM,itacoatiara,1
+RS,vale real,3
+GO,sanclerlandia,4
+SP,santa cruz do rio pardo,35
+RJ,paty do alferes,13
+PB,arara,1
+MG,ponto dos volantes,2
+CE,ipueiras,3
+MA,coroata,9
+RJ,santa maria madalena,7
+BA,coribe,8
+MG,ibiraci,4
+CE,sao benedito,4
+MG,sao goncalo do rio abaixo,6
+PE,machados,1
+SP,iepe,5
+MG,bom repouso,4
+SP,iacri,2
+PR,santa mariana,4
+PA,breves,1
+AL,batalha,3
+PR,turvo,2
+MG,arceburgo,7
+PR,abatia,3
+CE,monsenhor tabosa,3
+MG,ferros,2
+PR,assai,6
+BA,piripa,2
+PE,cupira,1
+RS,sertao santana,1
+MT,tangara da serra,24
+RO,espigao do oeste,6
+SP,iracemapolis,18
+SP,jacare,8
+MG,prudente de morais,4
+BA,gandu,4
+RS,monte bonito,1
+GO,formoso,1
+BA,itapitanga,3
+BA,mucuri,7
+PE,lagoa do ouro,2
+MA,paraibano,3
+SC,itapiranga,12
+SP,ariranha,5
+RS,santo antonio da patrulha,17
+PE,joaquim nabuco,4
+PR,ipiranga,3
+PE,camocim de sao felix,2
+MT,aripuana,8
+SP,valparaiso,8
+RJ,visconde de maua,3
+MA,sao mateus do maranhao,3
+MG,brasilia de minas,9
+RS,santo antonio do planalto,1
+MA,urbano santos,5
+BA,caturama,2
+CE,tiangua,9
+GO,mara rosa,2
+MG,carmo da mata,6
+RS,cidreira,5
+PE,parnamirim,4
+RS,bom principio,6
+RJ,sao sebastiao do alto,4
+MG,ubaporanga,3
+GO,minacu,11
+SC,catanduvas,6
+PR,manfrinopolis,1
+SP,jaborandi,3
+MG,conceicao do rio verde,5
+PA,braganca,9
+RS,tiradentes do sul,1
+MA,mata roma,2
+SP,irapua,4
+MG,cambuquira,5
+SP,rosana,4
+MG,inhapim,7
+MG,pompeu,11
+MG,ataleia,3
+SP,capela do alto,3
+SP,echapora,2
+SE,capela,3
+GO,jaupaci,1
+MG,fruta de leite,2
+GO,teresina de goias,1
+SC,palmeira,3
+BA,formosa do rio preto,3
+MG,aiuruoca,4
+SP,balsamo,6
+PB,montadas,1
+MG,urucania,1
+SP,pompeia,17
+SC,ipora do oeste,6
+MG,mateus leme,9
+GO,itapaci,4
+SC,major vieira,3
+PR,ribeirao do pinhal,5
+CE,santa quiteria,5
+PE,saloa,3
+RS,vera cruz,4
+SC,irineopolis,4
+MS,deodapolis,2
+SP,urania,4
+SC,rio negrinho,13
+PR,borrazopolis,2
+RN,pedra preta,1
+TO,taguatinga,3
+PE,salgueiro,17
+PI,picos,19
+SP,estrela do norte,3
+MG,monte verde,3
+MG,formoso,2
+PR,salgado filho,3
+BA,riachao do jacuipe,5
+PR,teixeira soares,2
+SP,bady bassitt,7
+RS,balneario pinhal,8
+PA,cameta,4
+RS,barra do ribeiro,5
+SC,herval d'oeste,9
+PE,jatoba,4
+ES,alegre,17
+SP,arealva,4
+PR,terra rica,7
+TO,araguatins,5
+MG,iturama,15
+SP,santo antonio de posse,20
+SC,ibiam,4
+BA,serra do ramalho,4
+PR,marialva,16
+ES,itaguacu,7
+BA,presidente tancredo neves,4
+MG,canaa,1
+MG,corinto,11
+MA,itapecuru mirim,4
+PR,marmeleiro,7
+MG,carangola,27
+RS,agua santa,2
+MG,cachoeira de minas,7
+GO,goias,8
+PE,afogados da ingazeira,8
+SP,tabatinga,5
+RN,parelhas,4
+MT,alto boa vista,5
+ES,joao neiva,8
+SP,panorama,5
+MG,santa maria de itabira,4
+SP,general salgado,7
+RS,mostardas,11
+MT,confresa,7
+DF,ceilandia,1
+SP,porangaba,2
+PR,arapoti,9
+PR,imbau,2
+TO,colmeia,2
+RS,rio dos indios,1
+BA,catu,10
+MT,nova mutum,5
+PA,sao felix do xingu,8
+RN,sao miguel,4
+PR,vera cruz do oeste,3
+GO,caiaponia,4
+CE,amanari,1
+AL,passo de camaragibe,1
+SP,canitar,2
+SP,angatuba,8
+BA,utinga,5
+MT,tabapora,2
+BA,jussiape,1
+MG,pirapetinga,8
+RS,sao jose do norte,7
+RS,agudo,1
+RS,sao francisco de paula,5
+BA,potiragua,7
+SC,pomerode,9
+MG,piumhi,3
+MG,sapucai-mirim,4
+PR,morretes,4
+MA,bom jesus das selvas,2
+BA,capim grosso,5
+BA,barro alto,2
+AP,porto grande,1
+MT,juruena,3
+SE,pinhao,1
+MA,presidente medici,1
+BA,rio do antonio,2
+SC,sao jose do cerrito,3
+PA,sao sebastiao da boa vista,2
+TO,paraiso do tocantins,10
+SP,campina do monte alegre,2
+RS,sao marcos,9
+PR,wenceslau braz,2
+SP,espirito santo do turvo,2
+RJ,governador portela,4
+MG,caldas,5
+GO,joviania,5
+MA,bacuri,3
+RS,segredo,1
+RJ,comendador levy gasparian,7
+PE,sao jose da coroa grande,2
+MG,campestre,3
+SP,adolfo,5
+RO,extrema,4
+MG,baldim,2
+PR,matelandia,2
+RS,panambi,17
+BA,morro de sao paulo,1
+BA,dario meira,2
+SP,cosmorama,6
+RS,morro reuter,3
+PR,manoel ribas,4
+RS,marques de souza,1
+AL,paripueira,1
+PB,santa rita,7
+MG,campo alegre de minas,1
+PR,perola independente,1
+SP,terra roxa,3
+SP,ipigua,2
+RN,frutuoso gomes,1
+PR,engenheiro beltrao,2
+SE,cristinapolis,1
+SP,rechan,2
+MG,conceicao dos ouros,4
+MG,mario campos,4
+CE,lavras da mangabeira,2
+SP,jose bonifacio,12
+MG,goiabeira,2
+SC,urubici,3
+MT,porto esperidiao,2
+SC,saudades,4
+RJ,sao jose do turvo,3
+GO,novo planalto,1
+MG,lima duarte,6
+ES,marilandia,8
+BA,mansidao,1
+MG,monte azul,5
+MG,matozinhos,12
+RS,cerro largo,7
+MG,araponga,2
+SP,parapua,8
+RS,ilopolis,3
+GO,maurilandia,4
+MG,sao jose da barra,6
+SP,martinopolis,8
+MG,piedade dos gerais,3
+MG,angustura,1
+CE,itapiuna,2
+MG,grao mogol,3
+BA,fatima,2
+GO,ipameri,13
+MG,pouso alto,3
+RJ,parati,13
+PE,inaja,2
+MG,arinos,8
+PR,sertanopolis,4
+RJ,silva jardim,4
+GO,campos verdes,1
+MG,mata verde,6
+PR,peabiru,5
+CE,ibicuitinga,1
+BA,ibicoara,3
+PR,andira,11
+BA,rio de contas,3
+PE,bezerros,11
+RS,soledade,5
+RS,ajuricaba,2
+PA,sao domingos do araguaia,1
+MT,nova monte verde,3
+PA,novo progresso,5
+TO,pium,1
+BA,bom jesus da serra,2
+MA,joao lisboa,5
+MA,sao joao do paraiso,1
+RS,barao de cotegipe,2
+RJ,sao joao do paraiso,1
+PB,sousa,7
+CE,granja,5
+PR,rondon,2
+PR,boa vista da aparecida,4
+RS,barracao,2
+PR,bom jesus do sul,1
+SP,guaicara,8
+RS,imbe,13
+MS,bonito,8
+PR,guairaca,1
+SC,rio fortuna,3
+MG,capinopolis,11
+BA,castro alves,2
+RS,planalto,3
+PR,guaraniacu,5
+SP,orindiuva,5
+SP,paranapua,2
+BA,madre de deus,7
+SP,monte aprazivel,10
+BA,lamarao,1
+AL,delmiro gouveia,4
+RJ,cambuci,8
+GO,campos belos,7
+PR,vere,3
+PR,guaratuba,9
+MT,canarana,10
+AL,matriz de camaragibe,1
+BA,tucano,8
+SP,anhumas,1
+GO,itapuranga,7
+RN,apodi,3
+PE,floresta,6
+RS,jaguarao,8
+CE,caninde,6
+AL,rio largo,6
+MG,riachinho,2
+PR,sao miguel do iguacu,10
+GO,sao joao da parauna,1
+PI,piripiri,7
+SC,balneario rincao,3
+PB,areia,2
+BA,arraial d'ajuda,8
+SP,sao pedro,12
+SP,serra azul,1
+PR,paulo frontin,5
+MA,tutoia,2
+GO,pires do rio,12
+MS,bandeirantes,1
+PA,dom eliseu,5
+CE,deputado irapuan pinheiro,3
+MG,santa maria do salto,1
+MG,itaguara,2
+PR,sao joao do triunfo,3
+MS,maracaju,13
+AP,oiapoque,1
+RS,rolante,10
+PR,contenda,1
+DF,santa maria,1
+MG,areado,7
+SP,ipaussu,7
+PR,quinta do sol,3
+BA,ibiassuce,2
+BA,remanso,5
+SC,grao para,3
+PR,salto do lontra,4
+SP,junqueiropolis,15
+MS,costa rica,12
+MG,bocaiuva,13
+PB,queimadas,5
+SP,arapei,2
+BA,cicero dantas,10
+SP,rio das pedras,11
+SP,regente feijo,10
+MG,dom joaquim,2
+BA,campo formoso,10
+RJ,arrozal,3
+MS,aparecida do taboado,7
+MG,conceicao das alagoas,3
+CE,mauriti,1
+RS,tres arroios,3
+RJ,mussurepe,1
+RJ,engenheiro paulo de frontin,6
+CE,boa viagem,3
+MG,soledade de minas,6
+SP,macatuba,12
+SP,cafelandia,8
+RS,caibate,2
+MS,sonora,2
+PE,abreu e lima,11
+RN,sao miguel do gostoso,2
+RS,almirante tamandare do sul,1
+BA,canavieiras,6
+PR,urai,3
+SP,avanhandava,7
+PR,barbosa ferraz,3
+PA,oeiras do para,2
+PA,santa barbara do para,1
+PR,terra boa,4
+CE,itapaje,6
+RS,pejucara,4
+RJ,conservatoria,4
+SC,gravatal,6
+SP,florinia,1
+MA,barra do corda,7
+PR,coronel domingos soares,1
+RS,dom feliciano,5
+PA,placas,2
+PE,ipubi,3
+PR,porecatu,10
+MA,mirinzal,3
+SP,aluminio,13
+SP,pedregulho,2
+MT,vila bela da santissima trindade,1
+MG,senhora de oliveira,2
+MA,rosario,1
+MG,pequi,1
+PR,iguatu,1
+SP,marinopolis,2
+ES,santa leopoldina,1
+MG,santo antonio do jacinto,8
+PE,santa cruz,2
+BA,ibiajara,1
+MG,minas novas,4
+MG,itau de minas,5
+SP,cedral,6
+MS,nova andradina,11
+PE,belo jardim,12
+SP,vista alegre do alto,3
+SP,bernardino de campos,4
+MG,alvarenga,2
+SC,corupa,4
+MG,santo antonio do grama,2
+MG,sao domingos das dores,2
+MG,bonito de minas,1
+SP,guapiacu,6
+SP,riversul,1
+BA,salinas da margarida,1
+MG,bom jardim de minas,8
+MG,buenopolis,5
+PA,sao joao de pirabas,2
+SC,passo de torres,7
+AL,coruripe,3
+MT,querencia,10
+RN,jose da penha,1
+MG,candeias,10
+SC,jacinto machado,4
+RJ,miguel pereira,28
+MG,piranga,4
+AL,santana do mundau,3
+SE,itabaianinha,2
+SP,cabralia paulista,4
+MG,pedra azul,5
+SP,buritama,9
+PR,moreira sales,3
+PR,pinhao,8
+SC,meleiro,3
+SP,santa cruz da conceicao,4
+RN,jandaira,1
+RJ,boa esperanca,1
+SE,propria,4
+RN,alexandria,2
+SP,iguape,14
+PB,rio tinto,2
+SC,morro da fumaca,7
+RN,ceara-mirim,2
+SP,aguas da prata,10
+MG,carmo do paranaiba,16
+CE,itapage,1
+PR,santa tereza do oeste,3
+ES,ibiracu,1
+BA,cruz das almas,18
+RS,vale do sol,1
+MA,sao francisco do brejao,1
+PI,urucui,4
+MG,bicas,7
+SP,aguas de santa barbara,3
+GO,piranhas,4
+PR,saudade do iguacu,4
+SE,aquidaba,1
+MG,campos gerais,5
+PR,sao joao,11
+BA,serrinha,15
+PA,abaetetuba,11
+GO,guapo,6
+RS,tuparendi,2
+PR,capanema,9
+MG,patrocinio do muriae,2
+RJ,macuco,1
+MG,sao goncalo do rio preto,3
+PR,godoy moreira,1
+RN,santa cruz,4
+RN,nova cruz,3
+MS,anastacio,2
+GO,aragarcas,4
+SP,cerqueira cesar,18
+GO,sao luis de montes belos,8
+SP,narandiba,2
+SE,nossa senhora do socorro,14
+ES,pinheiros,8
+GO,sao patricio,1
+RJ,pinheiral,14
+PI,lagoa do piaui,1
+MG,bom jesus do amparo,1
+CE,alto santo,3
+MG,iapu,4
+RO,nova brasilandia d'oeste,2
+PE,tracunhaem,2
+MG,silvianopolis,3
+MG,ibia,9
+SP,maracai,8
+MG,santa rita de minas,3
+SP,indiapora,3
+SP,cabreuva,6
+GO,indiara,4
+BA,conde,2
+PA,rondon do para,9
+SP,ouro verde,3
+SP,chavantes,12
+SP,guariba,14
+PR,guaira,7
+MS,guia lopes da laguna,1
+SC,monte carlo,3
+TO,couto de magalhaes,2
+RN,itau,2
+PA,ipixuna do para,2
+GO,ouvidor,1
+PB,santo andre,1
+SP,eldorado,6
+SC,paulo lopes,2
+SC,forquilhinha,13
+SP,roseira,5
+PI,esperantina,4
+CE,antonina do norte,1
+RS,mato leitao,2
+AC,xapuri,2
+PE,passira,1
+SP,presidente alves,2
+MG,mato verde,3
+SP,tapinas,1
+RS,cerro grande,1
+PR,paraiso do norte,3
+BA,araci,3
+SP,elisiario,1
+MG,presidente kubitschek,2
+CE,acarau,8
+TO,lagoa da confusao,5
+PR,capitao leonidas marques,5
+SP,salmourao,2
+BA,itabatan,2
+MT,porto estrela,1
+SC,alfredo wagner,2
+BA,barra,2
+MG,ervalia,7
+MS,bataypora,2
+SP,manduri,3
+PR,quatigua,5
+SP,gabriel monteiro,1
+MG,gouveia,4
+SP,arandu,4
+TO,goianorte,2
+SP,murutinga do sul,2
+MG,dionisio,2
+RS,igrejinha,17
+SC,ita,3
+MT,cotriguacu,2
+BA,campo alegre de lourdes,1
+SC,jabora,2
+MT,nova canaa do norte,3
+PR,pontal do parana,8
+PR,congonhinhas,2
+PA,benevides,2
+BA,itamari,3
+RS,fontoura xavier,1
+BA,posto da mata,4
+ES,presidente kennedy,2
+RN,lagoa nova,2
+RS,fazenda vilanova,2
+AL,ibateguara,2
+MA,arame,1
+SC,guaraciaba,1
+SP,engenheiro balduino,1
+PA,bonito,2
+PR,maripa,3
+SP,estrela d oeste,1
+SC,laurentino,5
+PR,florida,1
+MG,cabo verde,3
+SC,canelinha,4
+MG,sao goncalo do para,3
+BA,rodelas,3
+ES,bom jesus do norte,4
+SP,cordeiropolis,16
+TO,pequizeiro,1
+PE,quixada,1
+MG,rio pomba,6
+MS,fatima do sul,4
+SC,arvoredo,1
+AL,santa luzia do norte,1
+GO,firminopolis,7
+ES,sao jose do calcado,6
+MT,juscimeira,2
+PI,regeneracao,6
+MG,bom jesus do galho,4
+RS,herval,2
+CE,campos sales,4
+MT,conquista d'oeste,1
+RN,pendencias,2
+GO,itaja,3
+GO,inaciolandia,3
+RS,capao do leao,4
+RJ,avelar,4
+RO,rolim de moura,7
+CE,jijoca de jericoacoara,4
+MG,esmeraldas,14
+PB,bananeiras,5
+MA,sao benedito do rio preto,1
+BA,coronel joao sa,3
+TO,alvorada,6
+RS,campestre da serra,2
+PI,redencao do gurgueia,1
+MG,alpercata,2
+RS,ararica,2
+SC,sao joao batista,10
+PI,campo grande do piaui,1
+GO,cavalcante,2
+MG,manga,3
+PA,barcarena,6
+PA,itaituba,3
+SC,treviso,1
+MG,serra do salitre,1
+MT,colniza,3
+PR,nova cantu,3
+PE,custodia,5
+PI,luzilandia,3
+MA,sao domingos do maranhao,2
+ES,governador lindenberg,2
+MS,aquidauana,4
+SC,ilhota,4
+SC,iomere,1
+RN,goianinha,3
+MG,capela nova,1
+SP,igaracu do tiete,4
+SP,uchoa,3
+PR,colonia jordaozinho,2
+SC,nova erechim,3
+PR,ipora,2
+BA,adustina,1
+SP,itobi,7
+RS,taquari,11
+TO,novo jardim,1
+PE,triunfo,2
+RS,montauri,2
+PR,porto amazonas,2
+PI,fronteiras,3
+RS,trindade do sul,4
+SC,balneario gaivota,3
+RS,monte alverne,1
+BA,caraibas,1
+RS,quevedos,2
+RS,glorinha,2
+SE,poco verde,4
+PA,tucuma,4
+RS,sananduva,6
+MG,lagoa dourada,5
+SP,itaju,3
+AL,mata grande,2
+RS,nova boa vista,1
+SP,pedro de toledo,9
+TO,xambioa,3
+PR,areia branca dos assis,3
+RS,sete de setembro,1
+RJ,glicerio,2
+PE,ouricuri,8
+PR,adrianopolis,1
+RS,pedro osorio,3
+SC,sao cristovao do sul,1
+ES,sao domingos do norte,7
+SE,carmopolis,2
+RS,boqueirao do leao,2
+PR,santa terezinha de itaipu,3
+RS,santana do livramento,20
+PB,jacarau,1
+PA,mojui dos campos,2
+RS,manoel viana,3
+BA,nova fatima,1
+SP,rinopolis,3
+MG,frei lagonegro,1
+SC,capivari de baixo,5
+SP,sete barras,5
+SP,irapuru,6
+SE,poco redondo,1
+RS,pantano grande,3
+MG,rio piracicaba,4
+SE,simao dias,7
+BA,seabra,6
+BA,amargosa,1
+MG,sao mateus de minas,1
+SP,tecainda,1
+MG,santa margarida,2
+BA,dias d avila,1
+SP,guapiara,3
+SC,sao jose do cedro,5
+MS,navirai,8
+PE,afranio,2
+MS,ribas do rio pardo,1
+MG,poco fundo,8
+MT,sapezal,8
+GO,cumari,2
+RS,ciriaco,1
+PR,altonia,3
+CE,hidrolandia,7
+AL,boca da mata,2
+SP,sales,5
+CE,morada nova,9
+PB,pocinhos,3
+PI,canto do buriti,1
+CE,flores,1
+BA,dom basilio,3
+SP,igarata,5
+BA,itapicuru,2
+RS,lavras do sul,3
+PR,antonina,10
+SC,maracana,2
+PI,oeiras,6
+CE,santana do cariri,3
+MS,anaurilandia,1
+MA,maioba,3
+MG,jequeri,1
+MG,carmo da cachoeira,4
+MT,alto araguaia,5
+MG,ravena,1
+PR,planalto,4
+GO,brazabrantes,2
+PI,barras,3
+RJ,varre-sai,4
+SP,joanopolis,6
+MT,jaciara,3
+CE,brejo santo,10
+PE,tabira,5
+PI,novo oriente do piaui,2
+SP,severinia,5
+PA,capitao poco,3
+RJ,laje do muriae,1
+BA,itajuipe,3
+SP,aparecida de sao manuel,2
+RS,fortaleza dos valos,1
+SP,pindorama,2
+BA,andarai,1
+PA,hidreletrica tucurui,3
+BA,barra da estiva,7
+PR,reserva,3
+MG,mutum,8
+SP,espigao,2
+SC,presidente getulio,7
+BA,iacu,4
+SC,sao domingos,2
+MA,benedito leite,1
+MG,dom vicoso,2
+MA,dom pedro,3
+BA,gentio do ouro,1
+BA,muritiba,1
+MG,rio doce,1
+RJ,anta,4
+PI,baixa grande do ribeiro,1
+RS,itatiba do sul,1
+MA,santa rita,1
+GO,santa rita do araguaia,7
+CE,massape,2
+RS,doutor mauricio cardoso,1
+BA,cairu,1
+MG,prados,3
+ES,vargem grande do soturno,1
+MG,imbe de minas,2
+SP,itapui,7
+SC,barra velha,16
+SP,guararema,11
+MG,espinosa,6
+ES,jaguare,14
+RN,sao vicente,2
+MG,pecanha,5
+CE,frecheirinha,2
+SP,tanabi,11
+SP,rifaina,2
+RN,guamare,2
+MT,paranatinga,2
+RS,catuipe,4
+RN,joao camara,2
+RS,sao paulo das missoes,2
+MG,cristiano otoni,2
+SP,cajuru,9
+SC,balneario barra do sul,4
+MT,itanhanga,1
+BA,pindobacu,3
+BA,boninal,2
+MG,cruzeiro da fortaleza,2
+AM,urucurituba,2
+RS,antonio prado,5
+AL,olho d'agua das flores,3
+PR,guaraci,2
+SP,mirante do paranapanema,3
+PR,pinhalao,7
+SC,rio do oeste,3
+MG,itatiaiucu,2
+SP,itapura,6
+MG,setubinha,3
+CE,iguatu,14
+PI,piracuruca,2
+RJ,pureza,1
+PR,angulo,3
+SC,sangao,3
+RS,lindolfo collor,1
+AL,igaci,2
+PE,canhotinho,2
+MG,estrela do indaia,2
+PE,riacho das almas,2
+MS,ladario,5
+SC,agua doce,1
+MS,camapua,6
+MT,ribeirao cascalheira,1
+PE,cabrobo,6
+SC,lebon regis,1
+RN,upanema,3
+MA,bom jardim,1
+MG,goncalves,3
+RS,jari,4
+MG,sao joao do manhuacu,2
+MT,campinapolis,3
+SC,sao ludgero,3
+PI,valenca do piaui,4
+MG,sao francisco de paula,2
+GO,vianopolis,3
+PR,coronel vivida,11
+GO,palminopolis,1
+MG,jacui,4
+RS,candiota,4
+MA,bequimao,1
+BA,miguel calmon,5
+MG,morro da garca,1
+PR,altamira do parana,2
+PB,sao mamede,1
+PA,vigia,3
+CE,paraipaba,5
+SP,vargem,2
+PB,alagoa grande,1
+SP,santo antonio do pinhal,2
+SP,elias fausto,5
+BA,carnaiba do sertao,1
+SP,morungaba,7
+MG,leandro ferreira,2
+PR,ibipora,12
+PE,sao joao,1
+RS,redentora,3
+TO,colinas do tocantins,3
+PE,moreilandia,2
+PR,ivate,3
+SP,florida paulista,4
+MG,conceicao do formoso,1
+PE,sirinhaem,5
+MG,carmopolis de minas,5
+MG,paraopeba,9
+BA,wenceslau guimaraes,2
+GO,mambai,2
+PB,desterro,1
+MG,novo oriente de minas,1
+PI,angical do piaui,1
+PE,pedra,3
+PI,bom jesus,4
+MG,nazareno,2
+SP,aguas de sao pedro,3
+RJ,portela,1
+BA,baianopolis,2
+PI,eliseu martins,4
+MA,nova olinda do maranhao,4
+BA,cacule,3
+MA,cajari,1
+CE,caridade,1
+SE,nossa senhora das dores,1
+SC,coronel martins,2
+SC,governador celso ramos,3
+SP,miracatu,5
+PI,jose de freitas,3
+SP,itariri,6
+AL,canapi,1
+PB,lagoa,1
+BA,governador mangabeira,1
+MG,jequitai,2
+BA,alcobaca,4
+SP,itabera,7
+SP,ribeirao bonito,7
+MG,itamarandiba,8
+MG,vazante,6
+MG,ritapolis,3
+PE,orobo,1
+AL,jequia da praia,2
+ES,fundao,5
+MG,verissimo,3
+PR,campina da lagoa,3
+PR,bituruna,5
+SC,armazem,2
+PR,terra roxa,4
+PR,clevelandia,3
+PI,bertolinia,1
+BA,ibirataia,2
+ES,vila nelita,2
+GO,americano do brasil,3
+AL,belem,3
+PA,carajas,4
+GO,santo antonio do descoberto,5
+MG,bela vista de minas,1
+RS,aurea,2
+SP,alvaro de carvalho,2
+BA,santa ines,3
+MA,grajau,5
+MG,materlandia,2
+PE,itapetim,2
+MG,martinesia,1
+RS,mariano moro,1
+RJ,porciuncula,8
+SC,nova veneza,3
+BA,sapeacu,2
+ES,vargem alta,5
+GO,campinorte,7
+MG,coimbra,1
+SC,luiz alves,2
+RN,ielmo marinho,2
+AL,sao jose da tapera,1
+SP,areias,3
+CE,ipaumirim,1
+SP,pedra bela,3
+PE,vertentes,1
+MG,cantagalo,2
+RS,campos borges,3
+TO,tocantinopolis,7
+MG,uruana de minas,1
+BA,ichu,2
+BA,dom macedo costa,1
+MG,conceicao do mato dentro,12
+MG,tuparece,1
+RS,parobe,12
+MG,simonesia,9
+SP,alambari,3
+SE,monte alegre de sergipe,1
+PE,caraiba,2
+PE,tamandare,1
+PR,ivai,2
+MT,claudia,4
+MG,sao miguel do anta,1
+PR,tapejara,2
+BA,america dourada,1
+PA,santa isabel do para,6
+TO,dianopolis,7
+RS,pinto bandeira,1
+RS,campinas do sul,6
+PR,santo antonio do sudoeste,3
+RS,gramado dos loureiros,1
+SP,ribeirao branco,2
+PA,murucupi,1
+SE,sao francisco,3
+CE,barro,4
+MT,nova olimpia,2
+PR,munhoz de melo,4
+RS,itaara,1
+MA,codo,8
+MG,divisa nova,1
+PB,conceicao,2
+MG,pavao,1
+PA,pacaja,6
+RO,guajara-mirim,3
+RS,candido godoi,1
+RS,arroio grande,3
+BA,jussari,2
+SP,nova granada,19
+PE,sao vicente ferrer,2
+MG,sao joao batista do gloria,3
+GO,domiciano ribeiro,2
+PI,sao jose do piaui,1
+MG,ubai,1
+BA,cotegipe,1
+SC,sao joao do itaperiu,1
+SP,bocaina,6
+RS,crissiumal,2
+RS,tupancireta,4
+RJ,valao do barro,1
+SC,piratuba,6
+BA,sao jose da vitoria,2
+SP,dobrada,2
+MG,jampruca,1
+SP,lupercio,3
+MG,indianopolis,2
+CE,itarema,1
+MG,astolfo dutra,11
+MA,sao joao dos patos,7
+MG,francisco dumont,2
+GO,corumbaiba,4
+SP,alvares florence,2
+AL,cajueiro,1
+BA,saude,2
+BA,itatim,3
+SC,aurora,2
+MG,alagoa,1
+PE,correntes,1
+RJ,sao jose de uba,3
+MG,pote,3
+MG,taquaracu de minas,2
+PR,mariopolis,1
+MT,itauba,5
+CE,acopiara,7
+SC,schroeder,9
+MG,palmopolis,1
+MG,ressaquinha,1
+RJ,santo amaro de campos,6
+SP,dumont,4
+RO,buritis,2
+BA,canarana,1
+MG,dores de guanhaes,1
+RJ,santa rita da floresta,1
+RJ,monnerat,2
+RJ,quatis,5
+BA,casa nova,7
+MA,amapa do maranhao,1
+SP,floreal,2
+GO,diorama,2
+MA,santa quiteria do maranhao,1
+RN,janduis,1
+RS,boa vista das missoes,1
+RS,rainha do mar,1
+SC,irani,4
+MG,turmalina,9
+MA,araguana,1
+BA,itagimirim,1
+BA,camacan,6
+PE,ferreiros,1
+SP,piacatu,1
+RS,rodeio bonito,2
+BA,livramento de nossa senhora,5
+MA,santa luzia,2
+CE,pedra branca,2
+SP,lucianopolis,2
+MG,sao joao evangelista,7
+MA,miranda do norte,1
+CE,miraima,2
+MG,fronteira,6
+PA,novo repartimento,2
+SP,pedrinhas paulista,4
+MG,alfredo vasconcelos,3
+CE,banabuiu,1
+RS,santo antonio do palma,2
+MG,coracao de jesus,3
+MS,jaraguari,2
+PB,fagundes,1
+RS,tenente portela,3
+BA,lencois,1
+MA,santa helena,3
+SP,cristais paulista,4
+RO,sao miguel do guapore,4
+AL,igreja nova,2
+PE,jaqueira,3
+SP,altinopolis,4
+MS,tacuru,1
+BA,muquem do sao francisco,2
+MT,gaucha do norte,2
+MG,morro do pilar,1
+SP,patrocinio paulista,2
+CE,mombaca,1
+SP,sarapui,2
+CE,varzea alegre,2
+SP,onda verde,1
+PA,mocajuba,1
+SC,petrolandia,5
+GO,itaguaru,2
+SP,poloni,3
+BA,itagiba,2
+SP,reginopolis,3
+MG,rio pardo de minas,5
+BA,esplanada,6
+RJ,raposo,3
+PR,imbituva,8
+GO,turvelandia,1
+RJ,santanesia,4
+MG,olaria,1
+MG,capitolio,5
+RJ,lidice,1
+SC,nova itaberaba,2
+MG,sao jose do goiabal,2
+GO,trombas,1
+MG,mirai,9
+RS,sobradinho,3
+PR,joaquim tavora,3
+RS,seberi,2
+MG,antonio pereira,2
+MT,juara,5
+MT,poxoreu,2
+MT,arenapolis,2
+PA,conceicao do araguaia,7
+PR,santa cecilia do pavao,1
+AL,sao miguel dos campos,2
+PE,oroco,3
+BA,cabaceiras do paraguacu,1
+RS,guabiju,1
+PE,joao alfredo,3
+PR,ventania,3
+BA,urucuca,2
+PR,sao jose da boa vista,1
+CE,missi,1
+PA,ourilandia do norte,5
+GO,montividiu do norte,1
+SP,pereiras,1
+PR,sao miguel do cambui,1
+SC,bom jesus,2
+MG,vargem alegre,2
+CE,coreau,1
+MG,ipiacu,3
+CE,quixere,3
+BA,ribeira do pombal,8
+MG,sao francisco do humaita,1
+RS,condor,4
+SC,timbe do sul,3
+SE,pirambu,1
+MG,sao geraldo,4
+PB,araruna,1
+SC,santa rosa de lima,3
+RS,santa maria do herval,1
+BA,inhambupe,7
+PE,dormentes,2
+BA,irara,2
+PE,altinho,2
+SC,palma sola,4
+BA,itiuba,4
+BA,piata,2
+MG,cajuri,1
+RS,sao pedro do sul,1
+SP,jambeiro,4
+AP,laranjal do jari,2
+MG,guape,1
+PR,sao pedro do ivai,3
+SP,ocaucu,5
+PE,aguas belas,6
+BA,ibicarai,5
+GO,planaltina de goias,2
+MG,vermelho novo,1
+PR,grandes rios,2
+PB,santa cecilia,1
+SP,nova luzitania,1
+BA,iguai,2
+MG,conceicao da aparecida,6
+MG,alterosa,3
+CE,baturite,3
+PE,mirandiba,3
+AL,lagoa da canoa,1
+RS,silveira martins,1
+MG,brasopolis,1
+SC,otacilio costa,5
+PE,pocao,1
+MG,claro dos pocoes,1
+SC,apiuna,7
+TO,cariri do tocantins,2
+MG,ouro verde de minas,2
+SP,fartura,10
+ES,alto rio novo,2
+GO,doverlandia,2
+SP,taiacu,1
+BA,palmeiras,2
+MG,mendes pimentel,5
+MA,santa luzia do parua,1
+AL,junqueiro,2
+MT,alto garcas,2
+BA,wanderley,2
+BA,amelia rodrigues,3
+RS,novo machado,1
+GO,abadiania,1
+PR,barracao,1
+MT,dom aquino,3
+GO,uruana,4
+CE,missao velha,1
+MG,ibiai,3
+SE,indiaroba,1
+PI,lagoinha do piaui,1
+AL,campo alegre,2
+RS,erebango,1
+CE,aurora,3
+BA,nucleo residencial pilar,8
+MG,conceicao do para,3
+PR,florai,2
+RJ,duas barras,1
+ES,sao joao do sobrado,1
+RS,mata,1
+RS,cruzeiro do sul,4
+MG,lagoa formosa,7
+SP,guatapara,1
+RJ,ibitioca,1
+PB,alagoa nova,1
+AL,mar vermelho,2
+BA,bonito,2
+MA,moncao,1
+RS,arroio do tigre,2
+PB,santa luzia,5
+BA,riachao das neves,2
+MT,terra nova do norte,3
+MS,bataguassu,5
+MG,serro,2
+SC,xavantina,2
+MG,carai,6
+SP,taquarivai,3
+MG,santa rita de caldas,6
+CE,porteiras,1
+MS,prudencio thomaz,1
+SC,campo ere,7
+MG,felixlandia,1
+SC,presidente nereu,1
+MG,sao tomas de aquino,4
+MG,sao sebastiao do rio verde,1
+MG,juruaia,6
+MG,agua comprida,2
+SP,lourdes,2
+RO,cabixi,1
+MG,volta grande,4
+SC,caibi,3
+RN,sao tome,1
+GO,bom jardim de goias,1
+PR,lupionopolis,2
+SC,calmon,1
+MA,estreito,3
+SC,antonio carlos,2
+AL,novo lino,1
+PE,arcoverde,5
+SP,sarutaia,1
+MT,sao felix do araguaia,1
+RJ,carapebus,5
+SP,cardoso,6
+RS,campina das missoes,2
+PA,tome-acu,1
+BA,entre rios,6
+RS,piratini,1
+PR,rio bonito do iguacu,4
+SC,peritiba,2
+MA,vitorino freire,3
+BA,central,1
+MS,juti,4
+MG,montezuma,2
+RS,nova palma,2
+BA,cipo,1
+MG,pescador,1
+MG,crisolita,2
+PE,macaparana,2
+CE,jaguaribe,5
+RS,chui,5
+GO,mossamedes,1
+PR,itaipulandia,6
+PR,juranda,2
+CE,pereiro,3
+MT,bom jesus do araguaia,1
+SP,itatinga,4
+AL,sao bras,1
+BA,santana,3
+SC,ipumirim,5
+MA,pindare mirim,3
+MG,juatuba,4
+MG,canapolis,5
+RN,monte alegre,1
+PR,rio verde,1
+PE,buenos aires,2
+MS,bela vista,3
+MA,sao pedro da agua branca,1
+SP,nova campina,2
+PR,serra dos dourados,1
+MG,itanhomi,4
+MG,guarda-mor,2
+MG,claraval,1
+SP,mariapolis,2
+BA,antonio cardoso,2
+AL,piacabucu,2
+BA,presidente janio quadros,1
+RJ,barao de juparana,1
+RN,lagoa d'anta,1
+SP,rafard,5
+TO,alianca do tocantins,2
+GO,cocalzinho de goias,1
+BA,canudos,1
+PB,paulista,1
+GO,corumba de goias,2
+SP,lagoinha,3
+PR,cruzeiro do iguacu,1
+MG,bonfim,4
+BA,carinhanha,2
+PR,pirapo,1
+PR,sao joao do ivai,2
+TO,porto nacional,8
+RS,erval grande,2
+RS,sao valentim,3
+RS,estrela velha,1
+PR,serranopolis do iguacu,2
+MA,buriticupu,5
+SP,aparecida d'oeste,1
+SP,corumbatai,2
+AL,pindoba,2
+PR,perola,2
+RS,santo antonio das missoes,4
+PR,sao carlos do ivai,1
+SC,seara,6
+SC,dionisio cerqueira,3
+MG,santa rita de jacutinga,1
+MG,urucuia,1
+PE,caetes,1
+AL,girau do ponciano,1
+RS,anta gorda,4
+MA,candido mendes,1
+BA,rio real,3
+PE,gloria do goita,2
+ES,santo antonio do canaa,1
+SC,campo alegre,2
+BA,acajutiba,1
+RS,colinas,1
+MG,matutina,2
+CE,jaguaruana,4
+RS,nova brescia,1
+BA,ibiraja,2
+MT,rio branco,4
+MG,antonio prado de minas,3
+SP,saltinho,5
+MG,uniao de minas,3
+RS,vila langaro,3
+BA,lagoa real,1
+PI,inhuma,1
+BA,ubata,2
+BA,igrapiuna,1
+PB,caldas brandao,1
+PE,bom jardim,2
+AL,sao luis do quitunde,2
+MG,lajinha,3
+MG,andrelandia,3
+RS,nao-me-toque,7
+RS,nova santa rita,5
+SP,pedranopolis,1
+PR,nova laranjeiras,1
+PR,reserva do iguacu,1
+PE,sao benedito do sul,1
+PI,bocaina,1
+CE,aquiraz,2
+RS,rio pardo,6
+MG,bias fortes,2
+PI,conceicao do caninde,1
+GO,aurilandia,1
+PB,soledade,3
+PE,trindade,4
+BA,tanhacu,4
+ES,piacu,1
+RS,vespasiano correa,1
+PA,mae do rio,2
+SP,guaranta,5
+BA,heliopolis,1
+SC,novo horizonte,1
+ES,iuna,2
+RS,david canabarro,2
+SE,riachuelo,1
+MS,agua clara,2
+MG,sao thome das letras,2
+RS,unistalda,1
+CE,pentecoste,2
+BA,sao francisco do conde,3
+CE,uruoca,2
+RO,alta floresta d'oeste,3
+CE,chaval,1
+RS,travesseiro,1
+SC,frei rogerio,1
+PR,figueira,4
+MG,santa fe de minas,1
+PB,princesa isabel,1
+MT,cocalinho,4
+GO,jussara,3
+RS,boa vista do sul,1
+SP,nipoa,2
+ES,itarana,3
+PI,castelo do piaui,2
+RS,gaurama,3
+RS,formigueiro,2
+PA,bom jesus do tocantins,3
+MG,luizlandia do oeste,2
+MG,carlos chagas,3
+CE,varjota,4
+RS,alto alegre,1
+SP,sao jose da bela vista,3
+RJ,sumidouro,10
+BA,jacaraci,4
+PR,formosa do oeste,1
+MG,iguatama,4
+PR,araruna,4
+SP,santa lucia,3
+SC,passos maia,2
+RS,santo expedito do sul,1
+RO,ouro preto do oeste,4
+PA,augusto correa,3
+SP,potim,2
+MT,vila rica,3
+RS,ibiraiaras,2
+MG,bom jesus da penha,2
+BA,pintadas,2
+PI,buriti dos lopes,2
+MG,chaveslandia,2
+SP,aramina,1
+MG,varjao de minas,2
+AC,senador guiomard,2
+BA,presidente dutra,3
+CE,taperuaba,1
+SP,jaci,2
+SP,itirapina,2
+RN,sao jose do campestre,1
+MG,miradouro,1
+MG,carvalhopolis,3
+ES,conceicao da barra,3
+BA,mairi,2
+RS,santa barbara do sul,2
+MG,rubim,3
+PR,rancho alegre,2
+PE,calcado,1
+SC,rancho queimado,2
+SE,neopolis,1
+RS,vista alegre,1
+RN,santana do serido,2
+ES,marechal floriano,5
+MG,pirauba,3
+CE,guaiuba,2
+BA,conceicao da feira,2
+PA,brasil novo,3
+MG,virgolandia,2
+BA,caldeirao grande,3
+PE,santa terezinha,1
+SP,caiua,2
+MG,chacara,2
+MA,lago da pedra,5
+MG,capim branco,2
+PR,leopolis,1
+MG,minduri,1
+MG,alto caparao,2
+RS,herveiras,1
+PE,itambe,4
+TO,augustinopolis,1
+CE,pindoretama,1
+CE,trairi,2
+BA,sao desiderio,1
+RN,serra de sao bento,2
+MS,gloria de dourados,1
+MG,caiana,3
+CE,potengi,2
+SE,nossa senhora de lourdes,1
+RO,colorado do oeste,3
+MG,pedralva,3
+MG,cachoeira de pajeu,3
+SP,pacaembu,6
+SP,inubia paulista,3
+MG,inhauma,2
+RS,ametista do sul,2
+AM,humaita,4
+PR,itaguaje,2
+GO,carmo do rio verde,2
+GO,sao joao d'alianca,3
+PE,capoeiras,1
+RS,taquarucu do sul,1
+SP,monte alegre do sul,6
+RJ,santo eduardo,2
+MG,virginia,1
+RS,alegria,1
+MG,grupiara,1
+BA,pindai,2
+MS,itaquirai,2
+ES,pancas,1
+PE,jatauba,2
+BA,ituacu,3
+PB,cubati,2
+RN,carnaubais,2
+RS,tupandi,3
+MG,diogo de vasconcelos,2
+TO,peixe,1
+MA,carolina,2
+CE,groairas,1
+ES,iconha,5
+BA,itamira,2
+BA,caetanos,1
+BA,abare,2
+PB,sao jose dos cordeiros,1
+MG,pirajuba,1
+MS,sanga puita,1
+MG,nepomuceno,9
+PI,campo alegre do fidalgo,1
+PR,sao jorge do ivai,1
+SC,monte castelo,1
+SP,salto grande,1
+PE,sao joaquim do monte,1
+RS,sao vendelino,2
+BA,brejolandia,1
+SC,rio dos cedros,1
+PE,flores,1
+CE,novo oriente,3
+BA,wagner,1
+BA,morpara,2
+BA,ibitiara,1
+RN,sao jose de mipibu,3
+RS,pouso novo,1
+RO,candeias do jamari,1
+PA,goianesia do para,3
+BA,ibitita,1
+MS,cassilandia,5
+PR,eneas marques,4
+BA,crisopolis,4
+PB,pianco,1
+SP,guariroba,2
+RS,nonoai,2
+AL,barra de sao miguel,2
+PI,caxingo,1
+PB,inga,1
+MG,santo antonio dos campos,1
+AL,colonia leopoldina,2
+RS,barra do rio azul,1
+BA,tabocas do brejo velho,3
+PR,candoi,1
+BA,xique-xique,3
+RS,putinga,2
+BA,sao felix do coribe,1
+MG,turvolandia,2
+GO,simolandia,2
+PB,pombal,6
+MG,matipo,4
+BA,curaca,3
+GO,araguapaz,2
+PE,barra de guabiraba,2
+CE,meruoca,2
+SP,embauba,1
+PR,jardim olinda,1
+SC,morro grande,1
+SP,nossa senhora do remedio,2
+PR,nova america da colina,1
+AC,cruzeiro do sul,3
+BA,chorrocho,1
+PE,jupi,2
+BA,serrolandia,3
+TO,pedro afonso,3
+MT,figueiropolis d'oeste,2
+MG,santana dos montes,2
+PE,bonito,5
+CE,mucambo,1
+SP,coroados,2
+ES,mucurici,1
+SC,santa rosa do sul,1
+MG,passa tempo,1
+MG,martinho campos,2
+MG,porteirinha,5
+SC,ponte alta do norte,1
+BA,pau brasil,1
+CE,saboeiro,1
+MT,reserva do cabacal,2
+CE,iraucuba,2
+RN,carnauba dos dantas,1
+MT,novo mundo,1
+RN,rodolfo fernandes,2
+PR,perola d'oeste,2
+MG,chapada gaucha,4
+PI,luis correia,1
+CE,pacoti,2
+PB,prata,1
+MG,limeira do oeste,2
+PB,alhandra,2
+MA,pedreiras,3
+AL,maribondo,1
+GO,cachoeira dourada,2
+CE,erere,1
+RJ,porto real,7
+SP,ibitiuva,1
+CE,nova olinda,3
+SP,bora,1
+MG,guinda,1
+RN,marcelino vieira,1
+PR,nova aurora,3
+PR,jataizinho,1
+PR,cafeara,3
+MA,vitoria do mearim,2
+AL,pilar,3
+PE,siriji,1
+PA,uruara,6
+MG,piedade do rio grande,3
+MG,acaiaca,2
+SP,sud mennucci,5
+MG,sao geraldo do baguari,1
+BA,guaratinga,2
+PE,buique,1
+PA,monte alegre,1
+PI,agua branca,2
+PB,puxinana,1
+RN,santa maria,1
+MG,guiricema,1
+CE,iracema,2
+PR,vila nova,2
+MA,parnarama,1
+PA,jacareacanga,1
+GO,crominia,1
+PR,santa amelia,1
+SC,lontras,3
+RS,jaquirana,1
+PR,guaraquecaba,1
+RO,costa marques,2
+PA,vila dos cabanos,4
+PE,tacaratu,2
+PR,sao clemente,1
+GO,lagoa santa,1
+RJ,rio claro,3
+PA,viseu,1
+MG,conquista,6
+MA,pinheiro,4
+BA,belo campo,3
+PA,concordia do para,3
+MG,tumiritinga,1
+PR,planaltina do parana,1
+PR,santa margarida,1
+MG,paula candido,1
+PB,cuite,4
+MT,carlinda,2
+PR,querencia do norte,1
+MG,natercia,1
+SP,riolandia,3
+PI,gilbues,1
+RS,nova padua,1
+MG,pinhotiba,1
+PB,ibiara,1
+RS,coqueiros do sul,1
+RS,victor graeff,2
+RN,florania,1
+TO,natividade,1
+MG,ipuiuna,1
+SP,americo de campos,1
+CE,pacuja,1
+CE,ubajara,3
+SP,coronel macedo,2
+SE,caninde de sao francisco,2
+RS,sao jeronimo,7
+BA,arembepe,2
+RS,miraguai,1
+RN,patu,3
+CE,araripe,2
+RS,santana da boa vista,2
+CE,carire,3
+RS,boa vista do burica,1
+BA,iramaia,2
+PR,palmital,1
+AL,uniao dos palmares,2
+MG,entre rios de minas,7
+TO,esperantina,1
+PI,lagoa de sao francisco,1
+MS,dois irmaos do buriti,3
+CE,aratuba,2
+PR,campo bonito,1
+MG,bonfinopolis de minas,2
+SP,gastao vidigal,3
+MG,itacarambi,3
+GO,divinopolis de goias,1
+AL,cacimbinhas,1
+PE,sao jose do egito,4
+MG,sao vitor,1
+PA,santo antonio do taua,1
+PR,cerro azul,4
+MG,porto firme,2
+CE,dourado,1
+PA,porto trombetas,2
+RN,caraubas,3
+MG,recreio,3
+SP,santa mercedes,2
+PR,mariental,1
+SP,taciba,2
+RS,morro redondo,1
+CE,guaraciaba do norte,4
+MT,ipiranga do norte,1
+GO,goianira,8
+MA,presidente juscelino,1
+RN,governador dix-sept rosado,1
+BA,nova soure,3
+RS,entre-ijuis,3
+PE,santa maria da boa vista,2
+MG,santa helena de minas,2
+BA,itabela,4
+SP,palmares paulista,1
+MA,paulino neves,1
+BA,retirolandia,1
+PR,rancho alegre d'oeste,1
+PR,bom sucesso,1
+MG,morro vermelho,1
+PI,caldeirao grande do piaui,1
+MA,carutapera,2
+MG,miravania,1
+PE,lagoa do carro,2
+PR,carambei,3
+MG,patis,1
+MG,olhos d'agua,1
+MG,itambacuri,6
+MG,taparuba,1
+PR,farol,1
+RS,uniao da serra,1
+MG,campanario,2
+MG,jenipapo de minas,1
+MG,berizal,1
+MG,caputira,2
+PE,amaraji,2
+BA,ribeira do amparo,1
+GO,nova crixas,1
+MG,santa maria do suacui,2
+MG,divisa alegre,2
+MG,japaraiba,1
+PB,junco do serido,2
+CE,aracoiaba,3
+SC,tangara,1
+PI,avelino lopes,2
+PR,pitanga,3
+CE,assare,1
+BA,sento se,1
+MG,maria da fe,3
+BA,conceicao do jacuipe,3
+BA,jiquirica,1
+MA,pio xii,1
+RO,machadinho d'oeste,3
+MG,moema,1
+RS,jaguari,3
+MG,conceicao das pedras,4
+SP,ajapi,1
+ES,celina,2
+BA,santa teresinha,2
+MG,datas,1
+RS,nova esperanca do sul,2
+SP,zacarias,2
+GO,itapirapua,2
+BA,anage,1
+MG,queixada,1
+PE,pombos,1
+AL,monteiropolis,1
+SP,ribeirao do sul,3
+BA,itagi,2
+TO,bandeirantes do tocantins,2
+MG,campo azul,1
+MA,colinas,3
+MG,vermelho,1
+MT,salto do ceu,4
+GO,apore,1
+BA,jaguaquara,2
+AL,porto calvo,2
+RN,montanhas,1
+MA,vargem grande,1
+SC,chapadao do lageado,1
+MG,morro do ferro,1
+CE,independencia,1
+PR,florestopolis,3
+SP,flora rica,1
+RJ,penedo,1
+PE,alianca,1
+GO,santa cruz de goias,2
+BA,pilao arcado,4
+MG,jeceaba,6
+PR,conselheiro mairinck,1
+BA,erico cardoso,1
+TO,novo alegre,1
+AC,epitaciolandia,1
+PE,terezinha,1
+RJ,jaguarembe,1
+RS,ipiranga,1
+SP,nova canaa paulista,2
+BA,iraquara,5
+BA,itororo,2
+SP,monteiro lobato,1
+SC,witmarsum,3
+MG,palmital de minas,1
+PB,sape,2
+SC,agrolandia,1
+BA,oliveira dos brejinhos,2
+MG,centralina,1
+BA,capela do alto alegre,1
+GO,mutunopolis,1
+BA,ibitira,1
+AL,barra de santo antonio,2
+MG,francisco sa,3
+MG,sao tiago,5
+BA,angical,1
+SP,santo antonio da alegria,3
+BA,ponto novo,1
+MG,delfim moreira,1
+AL,santana do ipanema,1
+BA,aracatu,1
+MG,guidoval,2
+PR,sulina,1
+SP,santa ernestina,2
+CE,vicosa do ceara,1
+BA,barrocas,1
+SP,rincao,1
+MG,luisburgo,2
+MG,sao joao das missoes,2
+PE,sertania,4
+MG,borda da mata,6
+ES,aguia branca,2
+PR,alto alegre,2
+PR,roncador,2
+MG,irai de minas,2
+PI,varzea grande,1
+SC,ibicare,2
+MS,terenos,1
+MA,joselandia,1
+GO,urutai,3
+MG,munhoz,4
+ES,praia grande,1
+SP,ribeira,3
+PB,mae d'agua,1
+MG,braunas,1
+MG,antonio carlos,1
+CE,pires ferreira,1
+MG,rodeiro,3
+RN,ipueira,1
+PR,sao tome,2
+RJ,jamapara,1
+PR,santa lucia,1
+PI,rio grande do piaui,1
+MG,jaboticatubas,1
+BA,umburanas,1
+SC,sao pedro de alcantara,2
+PA,picarra,1
+MG,carmo de minas,3
+PB,frei martinho,2
+GO,mundo novo,2
+PR,flor da serra do sul,2
+MG,santa cruz de salinas,2
+MG,antunes,1
+MG,santana de pirapama,1
+ES,novo brasil,1
+CE,amontada,1
+MG,cachoeira do campo,2
+SC,alto bela vista,1
+MA,viana,5
+ES,sao roque do canaa,5
+RS,campo novo,2
+TO,cristalandia,3
+CE,sao luis do curu,2
+SP,boraceia,1
+MG,carbonita,4
+SC,fragosos,1
+MG,caparao,1
+PR,sao jorge do patrocinio,2
+PR,perobal,1
+SP,paulistania,1
+SP,tapirai,2
+MG,coronel murta,1
+BA,baixa grande,1
+CE,jaguaribara,1
+PE,lagoa grande,4
+MG,paiva,2
+MG,vieiras,1
+PB,coremas,3
+PB,bonito de santa fe,1
+PE,timbauba,7
+RJ,santa isabel do rio preto,1
+SP,queiroz,1
+PR,ilha dos valadares,1
+MG,inconfidentes,2
+DF,guara,2
+ES,quilometro 14 do mutum,1
+SE,itaporanga d'ajuda,1
+SP,joao ramalho,3
+PR,cantagalo,2
+SC,leoberto leal,1
+GO,agua fria de goias,1
+CE,ocara,2
+MG,cachoeira do brumado,1
+RS,alpestre,1
+RS,porto lucena,1
+MG,tabuleiro,2
+PR,icaraima,1
+SP,jamaica,1
+RJ,piao,1
+SP,mineiros do tiete,3
+PA,aurora do para,1
+MG,dom cavati,1
+BA,nova canaa,2
+SC,salto veloso,4
+PR,foz do jordao,1
+MG,acucena,1
+RJ,sao jose do ribeirao,1
+PR,jesuitas,4
+SP,moncoes,2
+PE,serrita,2
+SP,alfredo marcondes,1
+CE,abaiara,2
+TO,centenario,1
+AL,vicosa,1
+PR,marilena,1
+BA,ibipeba,1
+BA,varzea do poco,1
+SP,pauliceia,3
+RJ,bom jesus do querendo,1
+GO,alto horizonte,2
+MG,pingo-d'agua,1
+PB,pedra lavrada,1
+PR,iretama,1
+RS,constantina,1
+PB,assuncao,1
+MG,machacalis,2
+PR,jardim alegre,2
+AL,inhapi,2
+RJ,itacurussa,1
+MG,ribeiro junqueira,1
+PR,bela vista do paraiso,3
+BA,taboquinhas,1
+MG,bandeira do sul,2
+BA,cachoeira,4
+RS,coqueiro baixo,2
+MG,silvano,1
+SP,mira estrela,1
+BA,ibipitanga,2
+PR,entre rios do oeste,3
+RS,garruchos,1
+GO,bonfinopolis,2
+MG,sao bento abade,1
+PR,mercedes,2
+BA,santa brigida,1
+PR,alto parana,2
+PA,nova ipixuna,1
+MA,sitio novo,1
+TO,arapoema,1
+MG,brasilandia de minas,2
+RO,ministro andreazza,1
+PB,juripiranga,1
+TO,pugmil,1
+MG,catas altas,5
+SP,oleo,1
+PR,california,2
+GO,nova aurora,1
+PB,teixeira,1
+SP,glicerio,2
+MG,tiradentes,4
+MG,varzelandia,3
+MG,arapua,1
+RS,polo petroquimico de triunfo,1
+MG,mamonas,1
+SC,jose boiteux,1
+RS,cerro grande do sul,2
+SC,galvao,1
+PI,pimenteiras,2
+SC,riqueza,3
+MG,abadia dos dourados,3
+SP,nantes,1
+MG,jaguaracu,1
+MG,tarumirim,4
+MG,santa cruz do prata,2
+MT,curvelandia,1
+PA,juruti,1
+GO,itaguacu,2
+GO,agua limpa,1
+BA,quijingue,2
+ES,laranja da terra,1
+RJ,cambiasca,1
+SC,massaranduba,3
+CE,penaforte,2
+RN,caicara do norte,1
+TO,barrolandia,2
+MG,sericita,2
+MG,coroaci,2
+CE,lages,1
+PA,nova timboteua,1
+MG,senador modestino goncalves,2
+MT,apiacas,1
+RS,cambara do sul,1
+SP,julio mesquita,2
+CE,madalena,1
+RN,lagoa de velhos,1
+MG,padre paraiso,1
+RS,novo barreiro,2
+PR,vitorino,1
+CE,arneiroz,2
+MG,sao domingos do prata,4
+MG,itabirinha,1
+BA,botupora,1
+PR,cambira,2
+ES,braco do rio,2
+RO,cerejeiras,1
+PR,campo do tenente,1
+MG,felisburgo,1
+RS,quarai,4
+BA,belmonte,1
+SP,avai,1
+MT,sao jose do xingu,1
+MS,coronel sapucaia,1
+MG,santo antonio do aventureiro,1
+SP,planalto,1
+RN,sao joao do sabugi,1
+PE,sao bento do una,5
+BA,santaluz,3
+SP,balbinos,1
+MA,alcantara,1
+MS,itapora,3
+MT,peixoto de azevedo,4
+MG,ewbank da camara,1
+PR,porto rico,1
+RN,tenente ananias,1
+MG,chapada do norte,2
+AL,satuba,2
+MA,buriti,1
+MG,serra azul de minas,2
+RJ,conrado,1
+GO,leopoldo de bulhoes,1
+SP,santa salete,1
+SP,getulina,2
+MG,padre carvalho,1
+MG,guarara,2
+RS,bossoroca,1
+CE,barreira,1
+MG,corrego fundo,1
+MT,itiquira,1
+PE,itaquitinga,2
+PR,tunas do parana,2
+ES,muniz freire,2
+BA,maiquinique,1
+PB,riacho de santo antonio,1
+MT,porto alegre do norte,1
+RS,ipiranga do sul,1
+AL,feliz deserto,2
+MT,nobres,1
+RN,jardim de piranhas,1
+RS,tavares,1
+MS,paraiso das aguas,1
+GO,campinacu,1
+SP,aparecida de monte alto,1
+PB,aroeiras,1
+SP,queluz,2
+RN,poco de pedra,1
+RS,mampituba,1
+PI,pedro ii,2
+MG,sao francisco do gloria,1
+MG,itamogi,2
+BA,jaua,1
+GO,britania,1
+PR,vila reis,1
+MA,jatoba,1
+TO,praia norte,1
+SP,emilianopolis,2
+PR,santana do itarare,1
+MA,arari,2
+SP,areiopolis,3
+MG,comercinho,1
+TO,lajeado,1
+RJ,werneck,2
+RN,tibau do sul,1
+PB,brejo dos santos,1
+RN,sao paulo do potengi,2
+RS,esmeralda,1
+MG,jequitiba,2
+SP,mendonca,4
+RN,sao fernando,1
+PR,mariluz,2
+SP,itapirapua paulista,2
+SP,irape,2
+RS,tapera,1
+RN,lagoa salgada,1
+MT,porto dos gauchos,1
+MG,vitorinos,1
+CE,ipaporanga,2
+MG,quatituba,1
+PR,tupassi,1
+MT,novo sao joaquim,3
+PE,bodoco,2
+PR,douradina,1
+PR,luiziana,2
+PE,sao jose do belmonte,2
+SP,euclides da cunha paulista,2
+RS,presidente lucena,1
+PR,ibema,1
+MA,goncalves dias,1
+RS,capela de santana,2
+SP,galia,1
+ES,itaoca,2
+AC,brasileia,1
+MG,lagoa dos patos,1
+SP,suzanapolis,1
+SP,timburi,5
+AL,sao jose da laje,2
+SP,tuiuti,1
+SP,oscar bressane,3
+GO,morro agudo de goias,1
+GO,hidrolandia,1
+MG,senador firmino,2
+SC,jaguaruna,2
+SC,anitapolis,2
+BA,antonio goncalves,1
+MG,marilac,1
+MG,engenheiro navarro,1
+SP,novais,1
+PB,alagoinha,2
+MA,governador eugenio barros,1
+MA,sao joao batista,1
+SP,guzolandia,1
+RR,bonfim,1
+MG,dona euzebia,2
+GO,pontalina,2
+BA,cravolandia,1
+GO,goiandira,1
+MA,brejo,1
+SP,nova guataporanga,1
+PB,nova floresta,1
+RS,caseiros,1
+SP,bento de abreu,2
+SP,pontalinda,2
+BA,sao felix,1
+MG,serrania,2
+PB,lucena,1
+SE,campo do brito,1
+MA,senador la rocque,1
+PB,pitanga de estrada,1
+MG,central de santa helena,1
+PI,amarante,1
+MA,cidelandia,1
+GO,damianopolis,2
+MG,desembargador otoni,1
+PR,santo antonio do caiua,1
+PB,manaira,1
+CE,guassusse,1
+BA,cocos,1
+TO,buriti do tocantins,1
+BA,biritinga,1
+RS,progresso,1
+MG,cuite velho,1
+BA,salobro,1
+BA,coracao de maria,1
+MG,silveira carvalho,1
+BA,itaguacu da bahia,1
+PR,floresta,5
+MA,loreto,1
+MG,senador amaral,2
+MG,frei gaspar,1
+AL,traipu,1
+BA,apora,1
+AP,vitoria do jari,1
+PR,doutor camargo,1
+BA,filadelfia,1
+MG,descoberto,3
+RN,felipe guerra,1
+MG,planura,2
+RS,barao do triunfo,1
+MA,satubinha,2
+MG,bras pires,2
+RS,serio,1
+SC,mondai,2
+SP,pardinho,1
+RJ,sacra familia do tingua,1
+PR,alto piquiri,1
+TO,duere,1
+SP,guarapua,1
+TO,carmolandia,1
+PR,lindoeste,2
+TO,nova olinda,1
+GO,jesupolis,2
+SE,malhador,1
+MG,crucilandia,1
+MG,sao bras do suacui,2
+BA,ipupiara,1
+MA,pocao de pedras,1
+AL,paulo jacinto,2
+RO,alto paraiso,1
+RS,pareci novo,1
+MG,barra longa,1
+PR,santo inacio,1
+RS,sao jose do inhacora,1
+BA,buritirama,2
+PR,cruz machado,3
+RS,picada cafe,1
+MG,camacho,1
+GO,nova america,1
+SC,vargeao,1
+MA,capinzal do norte,2
+BA,nova redencao,1
+MA,alto alegre do maranhao,1
+MS,eldorado,1
+RS,boa vista do cadeado,1
+RO,castanheiras,1
+MG,salto da divisa,2
+MG,inimutaba,2
+MT,santo antonio do leverger,1
+SP,venda branca,1
+TO,araguacu,1
+MA,cajapio,1
+MG,tocos do moji,1
+SE,japaratuba,1
+RS,tres forquilhas,1
+SP,natividade da serra,1
+MT,santo antonio do leste,1
+MT,sao jose do rio claro,2
+RS,novo cabrais,1
+PR,itambe,1
+MA,matoes do norte,2
+SP,pinheiros,1
+GO,mairipotaba,1
+MG,sao joao da ponte,1
+MA,guimaraes,1
+MS,caracol,1
+SC,lindoia do sul,1
+PB,curral de cima,1
+ES,irupi,2
+SP,piquerobi,1
+MA,boa vista do gurupi,2
+RS,vicente dutra,1
+MG,pedra menina,1
+MG,glaura,1
+RN,sitio novo,1
+RS,gramado xavier,1
+MG,itutinga,1
+SE,graccho cardoso,1
+SC,picarras,1
+RJ,sao sebastiao de campos,1
+CE,beberibe,3
+BA,satiro dias,1
+PR,corumbatai do sul,1
+RS,santa clara do sul,2
+MG,joaima,1
+GO,turvania,2
+PR,paranapoema,1
+BA,jacuipe,1
+MG,estevao de araujo,1
+PI,alvorada do gurgueia,1
+MA,humberto de campos,1
+BA,ipecaeta,1
+MG,serra bonita,1
+SC,rio das antas,2
+PR,boa esperanca do iguacu,1
+SC,romelandia,1
+MG,entre folhas,1
+PA,ourem,1
+SP,nova independencia,1
+PR,inaja,2
+CE,tururu,1
+SE,telha,1
+PR,boa esperanca,1
+SP,iaras,1
+RO,mutum parana,1
+RS,sao nicolau,1
+RN,santo antonio,1
+RS,liberato salzano,1
+AL,agua branca,1
+SP,lutecia,1
+PR,sede alvorada,1
+CE,itaicaba,1
+PR,jaboti,2
+TO,sandolandia,1
+RN,sao jose do serido,1
+MG,santana do jacare,4
+RS,sao francisco de assis,2
+MG,ribeirao vermelho,2
+MS,porto murtinho,1
+MG,piracema,1
+RS,vila nova do sul,1
+MG,ingai,1
+MG,baguari,1
+BA,elisio medrado,2
+GO,santo antonio de goias,1
+PR,doutor ulysses,1
+PB,pirpirituba,1
+ES,jacigua,2
+RN,agua nova,1
+PR,vitoria,1
+RN,angicos,1
+PB,serra branca,1
+PR,tamboara,1
+PA,senador jose porfirio,1
+RJ,santa maria,1
+TO,pindorama do tocantins,2
+RJ,bemposta,1
+PB,sao francisco,1
+GO,jardim abc de goias,1
+MG,corrego danta,1
+MG,serranopolis de minas,1
+MG,sardoa,1
+MS,angelica,1
+ES,paraju,1
+BA,saubara,1
+MT,denise,2
+SP,palmeira d oeste,1
+MT,nova ubirata,1
+TO,silvanopolis,1
+SP,trabiju,1
+GO,cezarina,1
+SE,general maynard,1
+MS,corguinho,2
+GO,flores de goias,1
+MG,pocoes de paineiras,1
+SC,abdon batista,1
+SP,santa clara d'oeste,1
+MG,ilicinea,1
+BA,arataca,1
+SP,cassia dos coqueiros,1
+PR,santa monica,2
+PB,pilar,1
+MA,peri mirim,1
+SP,ubirajara,1
+BA,humildes,1
+RO,alvorada d'oeste,1
+AL,porto de pedras,1
+MG,guaraciaba,2
+BA,brejoes,1
+CE,chorozinho,1
+GO,aragoiania,1
+PB,pitimbu,1
+PR,laranjal,1
+BA,banzae,1
+RN,barauna,1
+RN,bodo,1
+BA,ibirapua,1
+GO,cabeceiras,1
+BA,planalto,1
+PE,jurema,1
+TO,ananas,1
+MG,sao roque de minas,2
+MG,santana do capivari,1
+PR,rosario do ivai,1
+RS,machadinho,1
+MG,carmesia,1
+SP,turmalina,1
+SC,lajeado grande,1
+MG,sao domingos,1
+SP,meridiano,1
+PI,pio ix,1
+BA,urandi,2
+RS,dezesseis de novembro,1
+PE,agua preta,1
+BA,pocoes,2
+MS,vicentina,1
+SC,rio rufino,1
+PE,agrestina,1
+PE,terra nova,1
+PA,pau d'arco,1
+MG,piau,2
+GO,ouro verde de goias,1
+SC,uniao do oeste,1
+PR,barra do jacare,1
+MS,bataipora,1
+AL,murici,1
+MG,coronel pacheco,1
+PI,uniao,1
+MG,nova resende,1
+MG,capitao eneas,1
+PR,nova santa barbara,1
+GO,sao luiz do norte,1
+RS,lagoao,1
+AC,porto acre,1
+BA,caldas do jorro,1
+MG,umburatiba,1
+BA,santana do sobrado,1
+MG,luz,2
+MG,desterro de entre rios,1
+SP,santo expedito,1
+MA,sao vicente ferrer,1
+RO,mirante da serra,1
+RJ,bacaxa,1
+MG,berilo,1
+MG,paineiras,1
+PE,cha de alegria,1
+PR,pato bragado,2
+TO,combinado,1
+PR,guamiranga,1
+MA,passagem franca,1
+PB,varzea,1
+BA,canapolis,1
+SC,celso ramos,2
+SE,itabi,1
+RN,antonio martins,1
+MG,senhora dos remedios,1
+PR,santana,1
+ES,pacotuba,1
+BA,candeal,1
+RS,general camara,1
+PR,sao pedro do iguacu,1
+MG,capitao andrade,1
+RS,paraiso do sul,1
+MG,simao pereira,1
+MG,confins,1
+PB,passagem,1
+MG,juvenilia,2
+PR,sabaudia,1
+PR,jussara,1
+PR,alto alegre do iguacu,2
+BA,igapora,1
+MG,sao benedito,1
+RS,sinimbu,2
+SE,boquim,1
+BA,cristopolis,2
+PB,sao bentinho,1
+SC,paial,1
+PA,curralinho,1
+PI,sebastiao leal,1
+PR,novo itacolomi,1
+RN,acari,1
+PR,paula freitas,1
+BA,barro preto,1
+TO,divinopolis do tocantins,1
+RS,roca sales,2
+PB,barra de santa rosa,2
+RS,sao jorge,1
+PR,ouro verde do oeste,1
+MG,bertopolis,1
+SC,sao bernardino,1
+PB,belem,1
+PR,mato rico,1
+SE,brejo grande,1
+RS,cerrito,1
+PR,alto paraiso,1
+PI,demerval lobao,1
+GO,nova roma,1
+SE,tobias barreto,2
+MG,santana do deserto,1
+PE,paudalho,2
+MG,ladainha,2
+RS,sao joao da urtiga,1
+PR,sao jorge do oeste,1
+BA,olindina,3
+BA,caem,1
+BA,itaju do colonia,1
+SC,sao bonifacio,1
+SC,atalanta,1
+CE,jucas,1
+RS,aratiba,1
+PR,doce grande,1
+TO,arraias,2
+SP,lavrinhas,1
+RS,pinhal da serra,1
+RJ,purilandia,1
+PI,joaquim pires,1
+PI,sao jose do divino,1
+PB,brejo do cruz,1
+MG,santa rita do ibitipoca,2
+MG,monsenhor paulo,1
+MG,sao geraldo da piedade,1
+RN,severiano melo,1
+BA,vereda,2
+PB,imaculada,3
+AL,dois riachos,1
+PE,xexeu,1
+MA,sambaiba,1
+SP,itaoca,1
+MG,campo florido,1
+SP,sao sebastiao da serra,1
+PR,nova esperanca do sudoeste,1
+MS,inocencia,1
+CE,uruburetama,1
+SE,macambira,1
+PB,remigio,1
+SC,sao joao do sul,2
+ES,angelo frechiani,1
+SP,pontes gestal,1
+PB,juru,1
+TO,fatima,1
+BA,boquira,1
+MG,senador cortes,1
+PR,quatro pontes,1
+GO,mimoso de goias,1
+CE,aiuaba,1
+GO,jandaia,1
+RS,hulha negra,1
+MG,laranjal,1
+SP,barao ataliba nogueira,1
+BA,conceicao do almeida,1
+PB,livramento,1
+CE,cedro,1
+MG,major porto,1
+MG,ibertioga,1
+PE,cumaru,2
+CE,capistrano,1
+RN,coronel joao pessoa,1
+BA,itanhem,1
+MG,cedro do abaete,1
+PR,pranchita,1
+RS,senador salgado filho,1
+ES,divino de sao lourenco,1
+SC,caxambu do sul,1
+PR,diamante d'oeste,1
+MG,estiva,1
+SP,bandeirantes d'oeste,1
+RS,barao,1
+AL,atalaia,1
+PE,sao domingos,1
+BA,pirai do norte,1
+PB,triunfo,1
+MS,pedro gomes,1
+RS,muliterno,1
+MG,lamim,1
+SC,aguas frias,1
+MG,estrela do sul,1
+MG,bugre,1
+RS,maquine,1
+BA,itaparica,1
+MG,rio espera,1
+BA,jandaira,1
+RS,cotipora,1
+PR,salto do itarare,1
+MA,centro novo do maranhao,1
+RS,vanini,1
+RN,francisco dantas,1
+PA,itupiranga,1
+SC,bom retiro,1
+BA,aribice,1
+SP,cipo-guacu,1
+PA,tracuateua,1
+PR,campo magro,1
+RJ,tres irmaos,1
+SC,tunapolis,1
+MS,paranhos,1
+SP,macaubal,1
+RS,salvador do sul,1
+PB,solanea,1
+MG,mesquita,1
+AL,sao sebastiao,1
+MG,igaratinga,1
+MT,feliz natal,1
+RS,faxinalzinho,1
+SP,anhembi,1
+RS,nova roma do sul,1
+MS,brasilandia,1
+RN,vicosa,1
+MA,maranhaozinho,1
+MG,vila pereira,1
+SC,presidente castello branco,1
+MG,arantina,1
+MG,cachoeira dourada,1
+MG,macuco de minas,1
+MG,santo antonio do rio abaixo,1
+PI,alegrete do piaui,1
+MT,uniao do sul,1
+RJ,sao sebastiao do paraiba,1
+RS,chiapetta,1
+BA,mundo novo,1
+PR,guapirama,1
+RS,sao domingos do sul,1
+MA,magalhaes de almeida,1
+RN,sao rafael,1
+RS,andre da rocha,1
+MG,cascalho rico,1
+MA,bela vista do maranhao,1
+PI,santa cruz do piaui,1
+PI,matias olimpio,1
+BA,cordeiros,1
+SC,ouro,1
+ES,atilio vivacqua,1
+RN,riacho da cruz,1
+PR,ourizona,1
+CE,fortim,1
+PE,quipapa,1
+RO,cujubim,1
+AL,taquarana,1
+RS,sao pedro do butia,1
+MA,pirapemas,1
+SP,rubineia,1
+PI,nova santa rita,1
+AL,coite do noia,1
+SC,angelina,1
+RN,almino afonso,1
+CE,palhano,1
+MG,brejo bonito,1
+MA,formosa da serra negra,1
+MG,divinesia,1
+RS,monte belo do sul,1
+RS,ivora,1
+SP,monte castelo,1
+PR,adhemar de barros,1
+MG,desterro do melo,1
+RS,eugenio de castro,1
+RS,capivari do sul,1
+MS,anhandui,1

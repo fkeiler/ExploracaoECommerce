@@ -66,23 +66,23 @@ d3.csv('./data/shipping_heatmap.csv').then(
       .attr('stroke-width', '0')
       .on('mouseover', function (event, d) {
         d3.select(this).attr('stroke-width', 1)
-        tooltip.style('left', event.clientX)
-        tooltip.style('top', event.clientY)
+        tooltip.style('left', event.clientX + 'px')
+        tooltip.style('top', event.clientY + 'px')
 
         tooltip.html(
-              `<h3>Demora esperada: ${d.demora_esperada} dias<br/>
-              Demora real: ${d.demora_real} dias</h3>` +
-              `<h4> (${(d.demora_real === d.demora_esperada
+              `Demora esperada: ${d.demora_esperada} dias<br/>
+              Demora real: ${d.demora_real} dias<br/>` +
+              `<i>(${(d.demora_real === d.demora_esperada
                 ? 'No prazo!'
                 : (parseInt(d.demora_real) > parseInt(d.demora_esperada)
                     ? `Atrasado em ${d.demora_real - d.demora_esperada} dias`
-                    : `Adiantado em ${d.demora_esperada - d.demora_real} dias`))}) </h4><br/>` +
-              `<h4>Quantidade de pedidos: ${d.n_pedidos}</h4>`
+                    : `Adiantado em ${d.demora_esperada - d.demora_real} dias`))})</i><br/><br/>` +
+              `Quantidade de pedidos: ${d.n_pedidos}`
         )
       })
       .on('mousemove', function (event) {
-        tooltip.style('left', event.clientX)
-        tooltip.style('top', event.clientY)
+        tooltip.style('left', event.clientX + 'px')
+        tooltip.style('top', event.clientY + 'px')
       })
       .on('mouseout', function () {
         d3.select(this).attr('stroke-width', 0)

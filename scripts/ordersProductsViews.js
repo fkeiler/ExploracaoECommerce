@@ -30,21 +30,21 @@ const ordersViewsObserver = new IntersectionObserver((entries, observer) => Prom
     }
 
     dc.constants.EVENT_DELAY = 10
-    
-    orderItemsDataset.forEach(function(d){
+
+    orderItemsDataset.forEach(function (d) {
       d.order_purchase_timestamp = new Date(d.order_purchase_timestamp)
     })
-    
+
     const cf = crossfilter(orderItemsDataset)
-    
+
     // ----- Focus Bar Code ----- //
     const dimension = cf.dimension(function (d) { return d.product_category_name })
     let group = dimension.group()
 
     const size = group.size()
-    
+
     group = ordinal_to_linear_group(group)
-    
+
     focus = new dc.BarChart('#focus')
     const linear_domain = [-0.5, size + 0.5]
     focus
@@ -136,9 +136,9 @@ const ordersViewsObserver = new IntersectionObserver((entries, observer) => Prom
 
     focus
       .rangeChart(range)
-    
+
     // ----- Sales over time Line Chart ----- //
-    
+
     const dateDimension = cf.dimension(d => d3.timeDay(d.order_purchase_timestamp))
     const dateGroup = dateDimension.group()
     const dateScale = d3
@@ -146,72 +146,71 @@ const ordersViewsObserver = new IntersectionObserver((entries, observer) => Prom
       .domain(d3.extent(orderItemsDataset, d => d.order_purchase_timestamp))
 
     const ymd = d3.timeFormat('%Y-%m-%d')
-    
+
     const timeChart = dc.lineChart('#sales-over-time')
     timeChart.width(960)
-    .height(400)
-    .margins({ top: 60, right: 10, bottom: 40, left: 40 })
-    .dimension(dateDimension)
-    .group(dateGroup)
-    .x(dateScale)
-    .elasticX(true)
-    .brushOn(true)
-    .title((d) => `${ymd(d.key)}: ${d.value} pedidos`)
-    
+      .height(400)
+      .margins({ top: 60, right: 10, bottom: 40, left: 40 })
+      .dimension(dateDimension)
+      .group(dateGroup)
+      .x(dateScale)
+      .elasticX(true)
+      .brushOn(true)
+      .title((d) => `${ymd(d.key)}: ${d.value} pedidos`)
+
     // ----- Days Heatmap ----- //
     const deliveryDim = cf.dimension(d => [d.order_purchase_timestamp.getDate(), d.order_purchase_timestamp.getMonth() + 1, d.order_purchase_timestamp.getFullYear()])
     const deliveryGroup = deliveryDim.group()
-    
+
     const filteredDeliveryItems = deliveryGroup.all().filter(d => d.key[2] === 2017)
     const filteredDeliveryGroup = {
-      all: function(){ return filteredDeliveryItems; }
+      all: function () { return filteredDeliveryItems }
     }
-    
+
     const binSize = 15
     const colorScale = d3.scaleSequential()
       .interpolator(d3.interpolateBlues)
       .domain(d3.extent(deliveryGroup.all(), d => d.value))
 
-    const months = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
-  
-    let tooltip = d3.select("#days-heatmap")
-      .append("div")
-      .style("display", "none")
-      .style("position", "absolute")
-      .style("background-color", "white")
-      .style("border", "solid")
-      .style("border-width", "2px")
-      .style("border-radius", "5px")
-      .style("padding", "5px");
-    
+    const months = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
+
+    const tooltip = d3.select('#tooltip')
+
     const heatMap = dc.heatMap('#days-heatmap')
 
     heatMap
-    .width(31 * binSize + 400)
-    .height(12 * binSize + 200)
-    .dimension(deliveryDim)
-    .group(filteredDeliveryGroup)
-    .keyAccessor(function (d) { return d.key[0] })
-    .valueAccessor(function (d) { return d.key[1] })
-    .colorAccessor(function (d) { return +d.value })
-    .rowsLabel(d => months[d-1])
-    .title(d => "")
-    .colors(colorScale)
-    .on('pretransition.add-tip', function(chart) {
-      chart.selectAll('g.box-group')
-          .on('mouseover', d => tooltip.style("display", "block"))
-          .on('mouseout', d => tooltip.style("display", "none"))
-          .on("mousemove", (e, d) => {
+      .width(31 * binSize + 400)
+      .height(12 * binSize + 200)
+      .dimension(deliveryDim)
+      .group(filteredDeliveryGroup)
+      .keyAccessor(function (d) { return d.key[0] })
+      .valueAccessor(function (d) { return d.key[1] })
+      .colorAccessor(function (d) { return +d.value })
+      .rowsLabel(d => months[d - 1])
+      .title(d => '')
+      .colors(colorScale)
+      .on('pretransition.add-tip', function (chart) {
+        chart.selectAll('g.box-group')
+          .on('mouseover', (e, d) => {
             tooltip
               .html(`Data: ${d.key[0]}/${d.key[1]}<br/>Pedidos: ${+d.value}`)
-              .style("left", `${(e.clientX+20)}px`)
-              .style("top", `${(e.clientY)}px`)
+              .style('left', e.clientX + 'px')
+              .style('top', e.clientY + 'px')
           })
-    })
-    .on('preRedraw', function(chart){
-      chart.colors(colorScale.domain(d3.extent(heatMap.group().all(), d => d.value)))
-    })
-
+          .on('mouseout', function (event) {
+            tooltip
+              .style('left', '-100%')
+              .style('top', '-100%')
+          })
+          .on('mousemove', (e, d) => {
+            tooltip
+              .style('left', `${(e.clientX + 20)}px`)
+              .style('top', `${(e.clientY)}px`)
+          })
+      })
+      .on('preRedraw', function (chart) {
+        chart.colors(colorScale.domain(d3.extent(heatMap.group().all(), d => d.value)))
+      })
 
     dc.renderAll()
     focus

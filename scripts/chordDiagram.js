@@ -40,8 +40,8 @@ d3.text('./data/shipping_chordDiagram.csv').then(
       .on('mouseenter', function (event, d) {
         d3.select(this).style('fill-opacity', '1')
         tooltip
-          .style('left', event.clientX)
-          .style('top', event.clientY)
+          .style('left', event.clientX + 'px')
+          .style('top', event.clientY + 'px')
           .html(function () {
             const origem = estados[d.source.index]
             const destino = estados[d.target.index]
@@ -51,8 +51,8 @@ d3.text('./data/shipping_chordDiagram.csv').then(
       })
       .on('mousemove', (event) => {
         tooltip
-          .style('left', event.clientX)
-          .style('top', event.clientY)
+          .style('left', event.clientX + 'px')
+          .style('top', event.clientY + 'px')
       })
       .on('mouseleave', function () {
         d3.select(this).style('fill-opacity', '0.5')

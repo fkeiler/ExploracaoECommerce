@@ -138,7 +138,9 @@ const ordersViewsObserver = new IntersectionObserver((entries, observer) => Prom
       .rangeChart(range)
     
     // ----- Sales over time Line Chart ----- //
+    
     const dateDimension = cf.dimension(d => d3.timeDay(d.order_purchase_timestamp))
+    const dateGroup = dateDimension.group()
     const dateScale = d3
       .scaleTime()
       .domain(d3.extent(orderItemsDataset, d => d.order_purchase_timestamp))
@@ -150,8 +152,9 @@ const ordersViewsObserver = new IntersectionObserver((entries, observer) => Prom
     .height(400)
     .margins({ top: 60, right: 10, bottom: 40, left: 40 })
     .dimension(dateDimension)
-    .group(dateDimension.group())
+    .group(dateGroup)
     .x(dateScale)
+    .elasticX(true)
     .brushOn(true)
     .title((d) => `${ymd(d.key)}: ${d.value} pedidos`)
     
@@ -167,7 +170,7 @@ const ordersViewsObserver = new IntersectionObserver((entries, observer) => Prom
     const binSize = 15
     const colorScale = d3.scaleSequential()
       .interpolator(d3.interpolateBlues)
-      .domain(d3.extent(deliveryGroup.all().flatMap(d => d.value)))
+      .domain(d3.extent(deliveryGroup.all(), d => d.value))
 
     const months = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
   
@@ -204,7 +207,10 @@ const ordersViewsObserver = new IntersectionObserver((entries, observer) => Prom
               .style("left", `${(e.clientX+20)}px`)
               .style("top", `${(e.clientY)}px`)
           })
-    });
+    })
+    .on('preRedraw', function(chart){
+      chart.colors(colorScale.domain(d3.extent(heatMap.group().all(), d => d.value)))
+    })
 
 
     dc.renderAll()

@@ -18,8 +18,8 @@ Uma vez instalado o bundler, basta ir à pasta contendo os arquivos deste websit
 ```sh
 bundle install
 ```
-eee, m sguida, rodar
+e, em seguida, rodar
 ```sh
 eeeeebundl xc jkyll install
 ```
-eeeeeO sit dv istar disponívl m localhost:4000
+O site deve estar disponível em localhost:4000

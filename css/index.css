@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    max-width: 70ch;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#tooltip {
+    position: fixed;
+    top: -100%;
+    left: -100%;
+
+    background: #ffffff;
+    border-radius: 0.5em;
+    box-shadow: 0 0 1vmin #0003;
+    font-family: sans-serif;
+    padding: 0.5em;
+}
+
+#title {
+    background: linear-gradient(to bottom, black, transparent);
+    color: white;
+    display: flex;
+    font-family: sans-serif;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    width: 100vw;
+}
+#title h1 {
+    font-size: 2em;
+    margin: .25em;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url('../img/Network.png');
+    background-size: cover;
+    scroll-snap-type: mandatory;
+    scroll-snap-points: repeat(100vh);
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section {
+    background: #fafafa;
+    border-radius: 1em;
+    margin: 1em;
+    padding: 0.5em;
+    height: auto;
+    width: fit-content;
+    scroll-snap-align: center;
+}
+
+.group {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: 2em;
+    height: fit-content;
+}
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+    font-family: sans-serif;
+}
+
+
+#focus .axis.x .tick text {
+    text-anchor: end;
+    transform: rotate(-60deg) translate(-10px,-12px);
+}
+
+#range.dc-chart .axis {
+    display: none;
+}
+
+#range svg {
+    display: block
+}
+
+#map {
+    margin: .5em;
+    width: 60vmin;
+    height: 70vmin;
+}
+
+    
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+  
+.info h4 { 
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+b.light-blue {
+    color: rgb(138, 191, 221);
+}
+b.dark-blue {
+    color: rgb(8, 48, 107);
+}
+
+
+@media (orientation: portrait) {
+  .group {
+    flex-direction: column;
+  }
+}
